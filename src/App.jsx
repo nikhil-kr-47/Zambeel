@@ -17,8 +17,8 @@ export default function App() {
 
   return (
     <div className="h-screen flex flex-col bg-[#F8F9FD] overflow-hidden font-sans select-none">
-      {/* 1. TOP FIXED BAR: Yellow Ticker Alert Banner with spacing before Zambeel Navbar */}
-      <div className="flex-shrink-0 z-40 bg-[#FFFF00] mb-2 sm:mb-2.5 shadow-2xs">
+      {/* 1. TOP FIXED BAR: Yellow Ticker Alert Banner (Full solid yellow across entire height) */}
+      <div className="flex-shrink-0 z-40 bg-[#FFFF00]">
         <AlertBanner />
       </div>
 
