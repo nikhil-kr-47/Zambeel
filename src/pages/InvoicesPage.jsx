@@ -12,15 +12,22 @@ import {
 export default function InvoicesPage({ currentUser }) {
   const [selectedStore, setSelectedStore] = useState(currentUser?.storeId || '');
   const [activeInvoiceDetail, setActiveInvoiceDetail] = useState(null);
+  const [pageSize, setPageSize] = useState(15);
+  const [currentPage, setCurrentPage] = useState(1);
 
   React.useEffect(() => {
     setSelectedStore(currentUser?.storeId || '');
+    setCurrentPage(1);
   }, [currentUser]);
 
   // Invoices filtered by user store
   const userInvoices = (currentUser?.invoices || []).filter(inv => 
     !selectedStore || inv.storeId === selectedStore
   );
+
+  const totalPages = Math.ceil(userInvoices.length / pageSize) || 1;
+  const startIndex = (currentPage - 1) * pageSize;
+  const paginatedInvoices = userInvoices.slice(startIndex, startIndex + pageSize);
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-12 animate-in fade-in duration-300">
@@ -109,7 +116,7 @@ export default function InvoicesPage({ currentUser }) {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-100">
-                    {userInvoices.map((inv) => (
+                    {paginatedInvoices.map((inv) => (
                       <tr key={inv.invoiceNumber} className="hover:bg-purple-50/20 transition-colors">
                         <td className="py-3.5 px-4 font-bold text-purple-700 font-mono">
                           {inv.invoiceNumber}
@@ -143,14 +150,14 @@ export default function InvoicesPage({ currentUser }) {
                         <td className="py-3.5 px-4 text-right space-x-2">
                           <button
                             onClick={() => setActiveInvoiceDetail(inv)}
-                            className="p-1.5 rounded-lg border border-gray-200 hover:bg-gray-100 text-gray-600 hover:text-gray-900 transition-colors"
+                            className="p-1.5 rounded-lg border border-gray-200 hover:bg-gray-100 text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
                             title="View Statement"
                           >
                             <Eye className="w-3.5 h-3.5" />
                           </button>
                           <button
                             onClick={() => alert(`Downloading PDF statement for ${inv.invoiceNumber}`)}
-                            className="p-1.5 rounded-lg border border-purple-200 bg-purple-50 hover:bg-purple-100 text-purple-700 transition-colors"
+                            className="p-1.5 rounded-lg border border-purple-200 bg-purple-50 hover:bg-purple-100 text-purple-700 transition-colors cursor-pointer"
                             title="Download PDF"
                           >
                             <Download className="w-3.5 h-3.5" />
@@ -160,6 +167,50 @@ export default function InvoicesPage({ currentUser }) {
                     ))}
                   </tbody>
                 </table>
+              </div>
+
+              {/* Invoices Pagination Footer */}
+              <div className="p-4 border border-gray-200 rounded-xl flex flex-wrap items-center justify-between gap-4 text-sm text-gray-600 bg-gray-50/50">
+                <div className="flex items-center gap-2">
+                  <div className="relative">
+                    <select
+                      value={pageSize}
+                      onChange={(e) => {
+                        setPageSize(Number(e.target.value));
+                        setCurrentPage(1);
+                      }}
+                      className="appearance-none bg-white border border-gray-300 rounded-lg px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700 pr-7 hover:border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-400 shadow-2xs cursor-pointer"
+                    >
+                      <option value={10}>10</option>
+                      <option value={15}>15</option>
+                      <option value={25}>25</option>
+                      <option value={50}>50</option>
+                    </select>
+                    <ChevronDown className="w-4 h-4 text-gray-500 absolute right-2 top-2.5 pointer-events-none" />
+                  </div>
+                  <span className="text-xs text-gray-500">statements per page</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-500 font-medium">Page:</span>
+                  <div className="relative">
+                    <select
+                      value={currentPage}
+                      onChange={(e) => setCurrentPage(Number(e.target.value))}
+                      className="appearance-none bg-white border border-gray-300 rounded-lg px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700 pr-7 hover:border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-400 shadow-2xs cursor-pointer"
+                    >
+                      {Array.from({ length: totalPages }, (_, i) => (
+                        <option key={i + 1} value={i + 1}>{i + 1}</option>
+                      ))}
+                    </select>
+                    <ChevronDown className="w-4 h-4 text-gray-500 absolute right-2 top-2.5 pointer-events-none" />
+                  </div>
+                  <span className="text-xs text-gray-500">of {totalPages}</span>
+                </div>
+
+                <div className="text-gray-500 font-medium text-xs sm:text-sm">
+                  Showing {userInvoices.length === 0 ? 0 : startIndex + 1} to {Math.min(startIndex + pageSize, userInvoices.length)} of {userInvoices.length} invoices
+                </div>
               </div>
             </div>
           )}

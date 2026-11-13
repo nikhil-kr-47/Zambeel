@@ -302,6 +302,7 @@ export default function OrdersPage({ currentUser }) {
                     <option value={10}>10</option>
                     <option value={20}>20</option>
                     <option value={25}>25</option>
+                    <option value={50}>50</option>
                   </select>
                   <ChevronDown className="w-4 h-4 text-gray-500 absolute right-2 top-2 pointer-events-none" />
                 </div>

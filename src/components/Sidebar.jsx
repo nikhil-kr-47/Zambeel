@@ -102,8 +102,8 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
         ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
         shadow-xl md:shadow-none border-r border-white/10
       `}>
-        {/* Top Header inside Sidebar: Hamburger Icon & Role Switch */}
-        <div className="p-4 pt-4 pb-2">
+        {/* Top Header inside Sidebar: Hamburger Icon, Role Switch & Horizontal Line */}
+        <div className="p-4 pt-4 pb-3.5 border-b border-white/10">
           {/* Top row with Hamburger */}
           <div className="flex items-center justify-between mb-3 px-1">
             <button
@@ -177,7 +177,7 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
         </div>
 
         {/* Middle Navigation Links (Increased font size, padding and spacing to add natural scrolling) */}
-        <div className="flex-1 overflow-y-auto sidebar-scroll px-3.5 space-y-3 py-2.5 min-h-0">
+        <div className="flex-1 overflow-y-auto sidebar-scroll px-3.5 space-y-3 py-3.5 min-h-0">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activePage === item.id;
