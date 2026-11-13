@@ -125,7 +125,7 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
 
           {/* Role Mode: Two Separate Sleek Boxes (Merchant & Agency) */}
           {!isCollapsed ? (
-            <div className="grid grid-cols-2 gap-2.5 w-full mb-2">
+            <div className="grid grid-cols-2 gap-2.5 w-full">
               <button
                 onClick={() => setRoleMode('merchant')}
                 className={`transition-all duration-200 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold text-center cursor-pointer ${
@@ -149,7 +149,7 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
               </button>
             </div>
           ) : (
-            <div className="flex flex-col items-center gap-1.5 mb-2">
+            <div className="flex flex-col items-center gap-1.5">
               <button
                 onClick={() => setRoleMode('merchant')}
                 className={`w-11 h-9 rounded-xl font-bold text-sm shadow-sm flex items-center justify-center transition-all cursor-pointer ${
@@ -176,8 +176,8 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
           )}
         </div>
 
-        {/* Middle Navigation Links (Increased font size, padding and spacing to add natural scrolling) */}
-        <div className="flex-1 overflow-y-auto sidebar-scroll px-3.5 space-y-3 py-3.5 min-h-0">
+        {/* Middle Navigation Links (Equal spacing above and below divider line) */}
+        <div className="flex-1 overflow-y-auto sidebar-scroll px-3.5 space-y-3 pt-3.5 pb-4 min-h-0">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activePage === item.id;
