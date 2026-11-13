@@ -24,8 +24,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Hetrixo', 'Plus Jakarta Sans', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-        hetrixo: ['Hetrixo', 'Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Hetrixo SemiBold', 'Hetrixo'],
+        hetrixo: ['Hetrixo SemiBold', 'Hetrixo'],
       }
     },
   },
