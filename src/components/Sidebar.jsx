@@ -30,6 +30,11 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
       hasDropdown: true,
       expanded: getStartedExpanded,
       toggleExpand: () => setGetStartedExpanded(!getStartedExpanded),
+      children: [
+        { id: 'gs-countries', label: 'Country Hubs' },
+        { id: 'gs-services', label: 'Core Services' },
+        { id: 'gs-onboarding', label: 'Quick Onboarding' }
+      ]
     },
     {
       id: 'dashboard',
@@ -53,6 +58,11 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
       hasDropdown: true,
       expanded: goldSubExpanded,
       toggleExpand: () => setGoldSubExpanded(!goldSubExpanded),
+      children: [
+        { id: 'gold-tier', label: 'VIP Pricing Tier' },
+        { id: 'gold-perks', label: 'Exclusive Sourcing Perks' },
+        { id: 'gold-manager', label: 'Dedicated Account Lead' }
+      ]
     },
     {
       id: 'my-invoices',
@@ -81,10 +91,10 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
         />
       )}
 
-      {/* Sidebar Container: w-[260px] */}
+      {/* Sidebar Container: w-[270px] */}
       <aside className={`
         fixed inset-y-0 left-0 z-50 
-        ${isCollapsed ? 'w-[78px]' : 'w-[260px]'}
+        ${isCollapsed ? 'w-[78px]' : 'w-[270px]'}
         md:sticky md:top-0 md:h-screen md:flex-shrink-0
         bg-gradient-to-br from-[#181135] via-[#1a133b] to-[#140E2D]
         text-white flex flex-col justify-between 
@@ -166,8 +176,8 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
           )}
         </div>
 
-        {/* Middle Navigation Links (Natural flexible height, not artificially limited) */}
-        <div className="flex-1 overflow-y-auto max-h-[calc(100vh-270px)] sidebar-scroll px-3 space-y-1.5 py-1">
+        {/* Middle Navigation Links (Increased font size, padding and spacing to add natural scrolling) */}
+        <div className="flex-1 overflow-y-auto sidebar-scroll px-3.5 space-y-3 py-2.5 min-h-0">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activePage === item.id;
@@ -178,10 +188,10 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
                   onClick={() => {
                     setActivePage(item.id);
                     if (item.toggleExpand) item.toggleExpand();
-                    if (window.innerWidth < 768) onClose();
+                    if (window.innerWidth < 768 && !item.hasDropdown) onClose();
                   }}
                   className={`
-                    relative flex items-center ${isCollapsed ? 'justify-center px-2 py-3' : 'justify-between px-3.5 py-3'} w-full rounded-xl transition-all duration-200 group text-[14.5px] font-semibold cursor-pointer leading-snug text-left
+                    relative flex items-center ${isCollapsed ? 'justify-center px-2 py-3.5' : 'justify-between px-4 py-3.5'} w-full rounded-xl transition-all duration-200 group text-[15.5px] font-semibold cursor-pointer leading-snug text-left
                     ${isActive
                       ? 'bg-gradient-to-r from-[#6A37F8] to-[#884BF9] text-white shadow-sm' 
                       : 'hover:bg-white/10 text-white/75 hover:text-white'
@@ -191,10 +201,10 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
                 >
                   {/* Left Yellow Accent Bar on Active item */}
                   {isActive && (
-                    <span className="absolute left-0 top-2.5 bottom-2.5 w-1.5 bg-[#FFC727] rounded-r-md" />
+                    <span className="absolute left-0 top-3 bottom-3 w-1.5 bg-[#FFC727] rounded-r-md" />
                   )}
 
-                  <div className={`flex items-center ${isCollapsed ? 'justify-center' : 'gap-3'}`}>
+                  <div className={`flex items-center ${isCollapsed ? 'justify-center' : 'gap-3.5'}`}>
                     <Icon className={`w-5 h-5 flex-shrink-0 transition-transform ${isActive ? 'text-white' : 'text-white/70 group-hover:text-white'}`} />
                     {!isCollapsed && (
                       <span className="leading-tight break-words">
@@ -207,6 +217,24 @@ export default function Sidebar({ isOpen, onClose, activePage, setActivePage, is
                     <ChevronDown className={`w-4 h-4 flex-shrink-0 text-white/70 transition-transform ml-1 ${item.expanded ? 'rotate-180' : ''}`} />
                   )}
                 </button>
+
+                {/* Sub-items when expanded */}
+                {!isCollapsed && item.hasDropdown && item.expanded && item.children && (
+                  <div className="mt-1.5 ml-7 pl-3 border-l border-white/20 space-y-1.5 py-1">
+                    {item.children.map((child) => (
+                      <button
+                        key={child.id}
+                        onClick={() => {
+                          setActivePage(item.id);
+                          if (window.innerWidth < 768) onClose();
+                        }}
+                        className="w-full text-left py-1.5 px-2.5 rounded-lg text-xs font-semibold text-white/70 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+                      >
+                        {child.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
             );
           })}

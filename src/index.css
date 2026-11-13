@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Hetrixo';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Hetrixo SemiBold'), local('Hetrixo-SemiBold'), local('Hetrixo-Semi-Bold'), local('Hetrixo');
+}
+
 @layer base {
   body {
     @apply font-sans bg-[#F8F9FD] text-slate-800 antialiased;
     margin: 0;
     padding: 0;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Hetrixo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-weight: 600;
   }
 }
 
