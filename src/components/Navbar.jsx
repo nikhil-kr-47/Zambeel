@@ -121,7 +121,7 @@ export default function Navbar({ currentUser, onSelectUser, setActivePage }) {
                     {currentUser.balance}
                   </span>
                 </div>
-                <div className="font-extrabold text-sm text-gray-900 mt-1.5">{currentUser.name}</div>
+                <div className="font-semibold text-sm text-gray-900 mt-1.5">{currentUser.name}</div>
                 <div className="text-xs text-gray-500 truncate">{currentUser.email}</div>
                 <div className="text-[11px] text-purple-800 font-medium mt-1 truncate">
                   🏬 {currentUser.storeName}

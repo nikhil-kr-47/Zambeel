@@ -54,7 +54,7 @@ export default function DashboardPage({ onNavigateToOrders, onNavigateToInvoices
               <DollarSign className="w-4 h-4" />
             </span>
           </div>
-          <div className="text-2xl font-extrabold text-gray-900 mt-2">72,450.00 AED</div>
+          <div className="text-2xl font-semibold text-gray-900 mt-2">72,450.00 AED</div>
           <div className="flex items-center gap-1 text-[11px] text-emerald-600 font-semibold mt-1">
             <ArrowUpRight className="w-3 h-3" />
             <span>+14.2% from last cycle</span>
@@ -68,7 +68,7 @@ export default function DashboardPage({ onNavigateToOrders, onNavigateToInvoices
               <Package className="w-4 h-4" />
             </span>
           </div>
-          <div className="text-2xl font-extrabold text-gray-900 mt-2">326 Orders</div>
+          <div className="text-2xl font-semibold text-gray-900 mt-2">326 Orders</div>
           <div className="flex items-center gap-1 text-[11px] text-emerald-600 font-semibold mt-1">
             <ArrowUpRight className="w-3 h-3" />
             <span>88.4% COD Delivery Success</span>
@@ -82,7 +82,7 @@ export default function DashboardPage({ onNavigateToOrders, onNavigateToInvoices
               <TrendingUp className="w-4 h-4" />
             </span>
           </div>
-          <div className="text-2xl font-extrabold text-emerald-600 mt-2">33,260.00 AED</div>
+          <div className="text-2xl font-semibold text-emerald-600 mt-2">33,260.00 AED</div>
           <div className="flex items-center gap-1 text-[11px] text-gray-400 mt-1">
             <span>Weekly cycle paid every Monday</span>
           </div>
@@ -95,7 +95,7 @@ export default function DashboardPage({ onNavigateToOrders, onNavigateToInvoices
               <Truck className="w-4 h-4" />
             </span>
           </div>
-          <div className="text-2xl font-extrabold text-gray-900 mt-2">9 / 9 Hubs</div>
+          <div className="text-2xl font-semibold text-gray-900 mt-2">9 / 9 Hubs</div>
           <div className="flex items-center gap-1 text-[11px] text-purple-600 font-semibold mt-1">
             <ShieldCheck className="w-3 h-3" />
             <span>All warehouses operational</span>

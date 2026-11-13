@@ -12,11 +12,10 @@
 
 @layer base {
   body {
-    @apply font-sans bg-[#F8F9FD] text-slate-800 antialiased;
+    @apply font-sans bg-[#F8F9FD] text-slate-800 antialiased font-normal;
     margin: 0;
     padding: 0;
     font-family: 'Hetrixo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    font-weight: 600;
   }
 }
 

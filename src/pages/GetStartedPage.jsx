@@ -22,11 +22,11 @@ export default function GetStartedPage({ onNavigateToOrders }) {
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-purple-500/20 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-white mb-4">
             Welcome to Zambeel
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto font-medium">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto font-normal">
             You just focus on the marketing and we will manage everything from product sourcing to customer delivery.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function GetStartedPage({ onNavigateToOrders }) {
       {/* 2. SECOND: Select Country Where You Want To Start (Flag grid reveals when scrolling) */}
       <section className="bg-white rounded-3xl p-6 md:p-8 pt-8 md:pt-10 shadow-sm border border-gray-100">
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-2.5">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 tracking-tight mb-2.5">
             Select Country Where You Want To Start
           </h2>
           <p className="text-gray-500 text-sm sm:text-base font-normal">
@@ -61,7 +61,7 @@ export default function GetStartedPage({ onNavigateToOrders }) {
 
               {/* Country Name */}
               <div className="w-full">
-                <span className="text-sm sm:text-base font-bold text-gray-900 group-hover:text-purple-700 transition-colors block">
+                <span className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-purple-700 transition-colors block">
                   {country.name}
                 </span>
               </div>
@@ -73,7 +73,7 @@ export default function GetStartedPage({ onNavigateToOrders }) {
       {/* 3. LAST: Why Choose Zambeel? (4 Feature Cards) */}
       <section className="bg-white rounded-3xl p-6 md:p-10 shadow-sm border border-gray-100">
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-2.5">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 tracking-tight mb-2.5">
             Why Choose Zambeel?
           </h2>
           <p className="text-gray-500 text-sm sm:text-base md:text-lg font-normal max-w-2xl mx-auto">
@@ -89,7 +89,7 @@ export default function GetStartedPage({ onNavigateToOrders }) {
             <div className="w-20 h-20 rounded-full bg-[#EEF2FF] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform shadow-2xs">
               <FeatureGlobeIcon className="w-10 h-10 text-[#3B49DF]" />
             </div>
-            <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
               9 countries, One Platform
             </h3>
             <p className="text-xs sm:text-sm text-gray-500 leading-relaxed font-normal">
@@ -102,7 +102,7 @@ export default function GetStartedPage({ onNavigateToOrders }) {
             <div className="w-20 h-20 rounded-full bg-[#EEF2FF] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform shadow-2xs">
               <FeatureAccountManagerIcon className="w-10 h-10 text-[#3B49DF]" fillTie="#EEF2FF" />
             </div>
-            <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
               Dedicated account manager for everyone
             </h3>
             <p className="text-xs sm:text-sm text-gray-500 leading-relaxed font-normal">
@@ -115,7 +115,7 @@ export default function GetStartedPage({ onNavigateToOrders }) {
             <div className="w-20 h-20 rounded-full bg-[#EEF2FF] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform shadow-2xs">
               <FeatureTruckIcon className="w-10 h-10 text-[#3B49DF]" />
             </div>
-            <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
               80% delivery ratio on COD
             </h3>
             <p className="text-xs sm:text-sm text-gray-500 leading-relaxed font-normal">
@@ -128,7 +128,7 @@ export default function GetStartedPage({ onNavigateToOrders }) {
             <div className="w-20 h-20 rounded-full bg-[#EEF2FF] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform shadow-2xs">
               <FeatureCalendarIcon className="w-10 h-10 text-[#3B49DF]" />
             </div>
-            <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2">
+            <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
               Weekly payments guaranteed
             </h3>
             <p className="text-xs sm:text-sm text-gray-500 leading-relaxed font-normal">

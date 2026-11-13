@@ -24,7 +24,7 @@ export default function CountryModal({ country, onClose, onSelect }) {
             <FlagIcon country={country.id} className="w-20 h-14 rounded-xl shadow-lg border-2 border-white/30 object-cover" />
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-2xl font-black tracking-tight">{country.name}</h3>
+                <h3 className="text-2xl font-semibold tracking-tight">{country.name}</h3>
                 <span className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/20 text-white">
                   {country.code}
                 </span>
@@ -36,15 +36,15 @@ export default function CountryModal({ country, onClose, onSelect }) {
           <div className="grid grid-cols-3 gap-2 mt-5 pt-4 border-t border-white/15 text-center">
             <div className="bg-white/10 rounded-xl p-2">
               <div className="text-[10px] text-purple-200 uppercase font-semibold">Delivery Ratio</div>
-              <div className="text-lg font-black text-amber-300">{country.deliveryRate}</div>
+              <div className="text-lg font-semibold text-amber-300">{country.deliveryRate}</div>
             </div>
             <div className="bg-white/10 rounded-xl p-2">
               <div className="text-[10px] text-purple-200 uppercase font-semibold">Average TAT</div>
-              <div className="text-lg font-black text-white">{country.avgDeliveryDays}</div>
+              <div className="text-lg font-semibold text-white">{country.avgDeliveryDays}</div>
             </div>
             <div className="bg-white/10 rounded-xl p-2">
               <div className="text-[10px] text-purple-200 uppercase font-semibold">Currency</div>
-              <div className="text-lg font-black text-white">{country.currency}</div>
+              <div className="text-lg font-semibold text-white">{country.currency}</div>
             </div>
           </div>
         </div>

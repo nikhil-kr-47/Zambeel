@@ -35,7 +35,7 @@ export default function OrdersPage({ currentUser }) {
     <div className="space-y-6 max-w-7xl mx-auto pb-16 animate-in fade-in duration-300">
       
       {/* Title */}
-      <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+      <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
         Orders Dashboard
       </h1>
 

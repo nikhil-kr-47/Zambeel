@@ -235,7 +235,7 @@ export default function SettingsPage({ currentUser }) {
             <div className="flex justify-between items-start">
               <div>
                 <span className="text-[10px] font-semibold tracking-wider text-purple-300 uppercase">Primary Payout Method</span>
-                <div className="text-lg font-black mt-1">{currentUser.bankName}</div>
+                <div className="text-lg font-semibold mt-1">{currentUser.bankName}</div>
               </div>
               <CreditCard className="w-8 h-8 text-amber-300" />
             </div>

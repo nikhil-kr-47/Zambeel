@@ -31,7 +31,7 @@ export default function InvoicesPage({ currentUser }) {
         {/* Card Header matching Screenshot 5 */}
         <div className="p-5 sm:p-6 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h1 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">
+            <h1 className="text-xl sm:text-2xl font-semibold text-gray-900 tracking-tight">
               Invoices
             </h1>
           </div>
@@ -126,7 +126,7 @@ export default function InvoicesPage({ currentUser }) {
                         <td className="py-3.5 px-4 text-rose-600 font-medium">
                           -{inv.sourcingCost}
                         </td>
-                        <td className="py-3.5 px-4 font-extrabold text-emerald-600 text-sm">
+                        <td className="py-3.5 px-4 font-semibold text-emerald-600 text-sm">
                           {inv.netProfit}
                         </td>
                         <td className="py-3.5 px-4">
@@ -204,7 +204,7 @@ export default function InvoicesPage({ currentUser }) {
                 <span>Zambeel Delivery & Handling Fee:</span>
                 <span>-{activeInvoiceDetail.deliveryFee}</span>
               </div>
-              <div className="flex justify-between py-3 border-t-2 border-gray-200 text-sm font-black text-emerald-600">
+              <div className="flex justify-between py-3 border-t-2 border-gray-200 text-sm font-semibold text-emerald-600">
                 <span>Net Transferred to Bank:</span>
                 <span className="text-base">{activeInvoiceDetail.netProfit}</span>
               </div>
