@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   ChevronDown, 
   ChevronLeft,
@@ -6,161 +6,307 @@ import {
   Download, 
   Eye, 
   X,
-  CheckCircle2,
   FileText
 } from 'lucide-react';
 
 export default function InvoicesPage({ currentUser }) {
-  const [selectedStore, setSelectedStore] = useState('EmirFlow');
+  // Sync selectedStore when currentUser changes
+  const [selectedStore, setSelectedStore] = useState(currentUser?.storeName || 'EmirFlow');
   const [activeInvoiceDetail, setActiveInvoiceDetail] = useState(null);
   const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Exact authentic invoice records matching official Zambeel screenshot (portal.myzambeel.com/my-invoices)
-  const AUTHENTIC_INVOICES = [
-    {
-      id: "33792-81899-emirflow_c32a325f-8663-42e6-b033-a132aa924c91.pdf",
-      invoiceName: "33792-81899-emirflow_c32a325f-8663-42e6-b033-a132aa924c91.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 2,845.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-11-13",
-      billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
-      grossCod: "AED 4,890.00",
-      sourcingCost: "AED 1,520.00",
-      deliveryFee: "AED 525.00",
-      ordersCount: 38
-    },
-    {
-      id: "33792-81885-emirflow_b81f451a-7512-41d5-9128-d218bb819c12.pdf",
-      invoiceName: "33792-81885-emirflow_b81f451a-7512-41d5-9128-d218bb819c12.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 3,120.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-11-06",
-      billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
-      grossCod: "AED 5,240.00",
-      sourcingCost: "AED 1,610.00",
-      deliveryFee: "AED 510.00",
-      ordersCount: 42
-    },
-    {
-      id: "33792-81872-emirflow_f72c189b-6401-49b2-a812-c198aa715d34.pdf",
-      invoiceName: "33792-81872-emirflow_f72c189b-6401-49b2-a812-c198aa715d34.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 2,640.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-10-30",
-      billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
-      grossCod: "AED 4,450.00",
-      sourcingCost: "AED 1,390.00",
-      deliveryFee: "AED 420.00",
-      ordersCount: 35
-    },
-    {
-      id: "33792-81860-emirflow_e51a902d-5310-48a1-b703-b087cc624e56.pdf",
-      invoiceName: "33792-81860-emirflow_e51a902d-5310-48a1-b703-b087cc624e56.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 2,980.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-10-23",
-      billingPeriod: "Oct 16, 2026 - Oct 22, 2026",
-      grossCod: "AED 5,010.00",
-      sourcingCost: "AED 1,560.00",
-      deliveryFee: "AED 470.00",
-      ordersCount: 39
-    },
-    {
-      id: "33792-81848-emirflow_d40b891c-4209-4790-a692-a976bb513f78.pdf",
-      invoiceName: "33792-81848-emirflow_d40b891c-4209-4790-a692-a976bb513f78.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 3,450.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-10-16",
-      billingPeriod: "Oct 09, 2026 - Oct 15, 2026",
-      grossCod: "AED 5,820.00",
-      sourcingCost: "AED 1,790.00",
-      deliveryFee: "AED 580.00",
-      ordersCount: 46
-    },
-    {
-      id: "33792-81835-emirflow_a39c780b-3198-468f-9581-9865aa402e67.pdf",
-      invoiceName: "33792-81835-emirflow_a39c780b-3198-468f-9581-9865aa402e67.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 2,710.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-10-09",
-      billingPeriod: "Oct 02, 2026 - Oct 08, 2026",
-      grossCod: "AED 4,580.00",
-      sourcingCost: "AED 1,420.00",
-      deliveryFee: "AED 450.00",
-      ordersCount: 36
-    },
-    {
-      id: "33792-81822-emirflow_928b679a-2087-457e-8470-8754993f1d56.pdf",
-      invoiceName: "33792-81822-emirflow_928b679a-2087-457e-8470-8754993f1d56.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 3,290.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-10-02",
-      billingPeriod: "Sep 25, 2026 - Oct 01, 2026",
-      grossCod: "AED 5,490.00",
-      sourcingCost: "AED 1,680.00",
-      deliveryFee: "AED 520.00",
-      ordersCount: 43
-    },
-    {
-      id: "33792-81810-emirflow_817a5689-1976-446d-736f-7643882e0c45.pdf",
-      invoiceName: "33792-81810-emirflow_817a5689-1976-446d-736f-7643882e0c45.pdf",
-      storeName: "EmirFlow",
-      payout: "AED 2,560.00",
-      paymentStatus: "N/A",
-      paymentReason: "N/A",
-      dateOfInvoice: "2026-09-25",
-      billingPeriod: "Sep 18, 2026 - Sep 24, 2026",
-      grossCod: "AED 4,320.00",
-      sourcingCost: "AED 1,350.00",
-      deliveryFee: "AED 410.00",
-      ordersCount: 33
+  useEffect(() => {
+    if (currentUser?.storeName) {
+      setSelectedStore(currentUser.storeName);
+      setCurrentPage(1);
     }
-  ];
+  }, [currentUser]);
 
-  // Map any additional currentUser invoices into the official Zambeel format
-  const normalizedUserInvoices = (currentUser?.invoices || []).map((inv, idx) => ({
-    id: `33792-8180${idx}-emirflow_${inv.invoiceNumber.toLowerCase().replace(/[^a-z0-9]/g, '')}.pdf`,
-    invoiceName: `33792-8180${idx}-emirflow_${inv.invoiceNumber.toLowerCase().replace(/[^a-z0-9]/g, '')}.pdf`,
-    storeName: selectedStore === 'EmirFlow' ? 'EmirFlow' : (currentUser?.storeName || 'EmirFlow'),
-    payout: inv.netProfit?.includes('AED') ? `AED ${inv.netProfit.replace('AED', '').trim()}` : (inv.netProfit || 'AED 2,845.00'),
-    paymentStatus: 'N/A',
-    paymentReason: 'N/A',
-    dateOfInvoice: inv.paidDate || '2026-11-13',
-    billingPeriod: inv.billingPeriod || 'Nov 06, 2026 - Nov 12, 2026',
-    grossCod: inv.grossCodCollected || 'AED 4,890.00',
-    sourcingCost: inv.sourcingCost ? `AED ${inv.sourcingCost}` : 'AED 1,520.00',
-    deliveryFee: inv.deliveryFee ? `AED ${inv.deliveryFee}` : 'AED 525.00',
-    ordersCount: inv.ordersCount || 38
-  }));
+  // Unique invoice datasets for each of the 4 accounts (Strictly 3-digit payouts)
+  const STORE_INVOICES = {
+    'EmirFlow': [
+      {
+        id: "33792-81899-emirflow_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
+        invoiceName: "33792-81899-emirflow_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 284",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-13",
+        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
+        grossCod: "AED 489",
+        sourcingCost: "AED 152",
+        deliveryFee: "AED 53",
+        ordersCount: 38
+      },
+      {
+        id: "33792-81885-emirflow_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
+        invoiceName: "33792-81885-emirflow_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 312",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-06",
+        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
+        grossCod: "AED 524",
+        sourcingCost: "AED 161",
+        deliveryFee: "AED 51",
+        ordersCount: 42
+      },
+      {
+        id: "33792-81872-emirflow_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
+        invoiceName: "33792-81872-emirflow_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 264",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-30",
+        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
+        grossCod: "AED 445",
+        sourcingCost: "AED 139",
+        deliveryFee: "AED 42",
+        ordersCount: 35
+      },
+      {
+        id: "33792-81860-emirflow_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
+        invoiceName: "33792-81860-emirflow_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 298",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-23",
+        billingPeriod: "Oct 16, 2026 - Oct 22, 2026",
+        grossCod: "AED 501",
+        sourcingCost: "AED 156",
+        deliveryFee: "AED 47",
+        ordersCount: 39
+      },
+      {
+        id: "33792-81848-emirflow_d40b891c-4209-4790-a692-a76bb513f78.pdf",
+        invoiceName: "33792-81848-emirflow_d40b891c-4209-4790-a692-a76bb513f78.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 345",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-16",
+        billingPeriod: "Oct 09, 2026 - Oct 15, 2026",
+        grossCod: "AED 582",
+        sourcingCost: "AED 179",
+        deliveryFee: "AED 58",
+        ordersCount: 46
+      },
+      {
+        id: "33792-81835-emirflow_a39c780b-3198-468f-9581-965aa402e67.pdf",
+        invoiceName: "33792-81835-emirflow_a39c780b-3198-468f-9581-965aa402e67.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 271",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-09",
+        billingPeriod: "Oct 02, 2026 - Oct 08, 2026",
+        grossCod: "AED 458",
+        sourcingCost: "AED 142",
+        deliveryFee: "AED 45",
+        ordersCount: 36
+      },
+      {
+        id: "33792-81822-emirflow_928b679a-2087-457e-8470-854993f1d56.pdf",
+        invoiceName: "33792-81822-emirflow_928b679a-2087-457e-8470-854993f1d56.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 329",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-02",
+        billingPeriod: "Sep 25, 2026 - Oct 01, 2026",
+        grossCod: "AED 549",
+        sourcingCost: "AED 168",
+        deliveryFee: "AED 52",
+        ordersCount: 43
+      },
+      {
+        id: "33792-81810-emirflow_817a5689-1976-446d-736f-743882e0c45.pdf",
+        invoiceName: "33792-81810-emirflow_817a5689-1976-446d-736f-743882e0c45.pdf",
+        storeName: "EmirFlow",
+        payout: "AED 256",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-09-25",
+        billingPeriod: "Sep 18, 2026 - Sep 24, 2026",
+        grossCod: "AED 432",
+        sourcingCost: "AED 135",
+        deliveryFee: "AED 41",
+        ordersCount: 33
+      }
+    ],
+    'Riyadh Prime': [
+      {
+        id: "41285-92014-riyadhprime_a71b294e-1284-48d1-9310-f94cb831a22.pdf",
+        invoiceName: "41285-92014-riyadhprime_a71b294e-1284-48d1-9310-f94cb831a22.pdf",
+        storeName: "Riyadh Prime",
+        payout: "SAR 295",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-13",
+        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
+        grossCod: "SAR 510",
+        sourcingCost: "SAR 160",
+        deliveryFee: "SAR 55",
+        ordersCount: 40
+      },
+      {
+        id: "41285-92002-riyadhprime_f62a183d-9173-47c0-8209-e83ba720b11.pdf",
+        invoiceName: "41285-92002-riyadhprime_f62a183d-9173-47c0-8209-e83ba720b11.pdf",
+        storeName: "Riyadh Prime",
+        payout: "SAR 340",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-06",
+        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
+        grossCod: "SAR 580",
+        sourcingCost: "SAR 182",
+        deliveryFee: "SAR 58",
+        ordersCount: 45
+      },
+      {
+        id: "41285-91990-riyadhprime_e51f072c-8062-46b9-7198-d72a9619c00.pdf",
+        invoiceName: "41285-91990-riyadhprime_e51f072c-8062-46b9-7198-d72a9619c00.pdf",
+        storeName: "Riyadh Prime",
+        payout: "SAR 280",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-30",
+        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
+        grossCod: "SAR 485",
+        sourcingCost: "SAR 155",
+        deliveryFee: "SAR 50",
+        ordersCount: 37
+      },
+      {
+        id: "41285-91978-riyadhprime_d40e961b-7951-45a8-6087-c6198508d99.pdf",
+        invoiceName: "41285-91978-riyadhprime_d40e961b-7951-45a8-6087-c6198508d99.pdf",
+        storeName: "Riyadh Prime",
+        payout: "SAR 315",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-23",
+        billingPeriod: "Oct 16, 2026 - Oct 22, 2026",
+        grossCod: "SAR 535",
+        sourcingCost: "SAR 168",
+        deliveryFee: "SAR 52",
+        ordersCount: 41
+      }
+    ],
+    'Doha Elite': [
+      {
+        id: "52391-73125-dohaelite_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
+        invoiceName: "52391-73125-dohaelite_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
+        storeName: "Doha Elite",
+        payout: "QAR 275",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-13",
+        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
+        grossCod: "QAR 470",
+        sourcingCost: "QAR 148",
+        deliveryFee: "QAR 47",
+        ordersCount: 36
+      },
+      {
+        id: "52391-73112-dohaelite_b71a294e-1284-48d1-7310-994cb831a22.pdf",
+        invoiceName: "52391-73112-dohaelite_b71a294e-1284-48d1-7310-994cb831a22.pdf",
+        storeName: "Doha Elite",
+        payout: "QAR 320",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-06",
+        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
+        grossCod: "QAR 545",
+        sourcingCost: "QAR 172",
+        deliveryFee: "QAR 53",
+        ordersCount: 42
+      },
+      {
+        id: "52391-73099-dohaelite_a60f183d-0173-47c0-6209-883ba720b11.pdf",
+        invoiceName: "52391-73099-dohaelite_a60f183d-0173-47c0-6209-883ba720b11.pdf",
+        storeName: "Doha Elite",
+        payout: "QAR 290",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-30",
+        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
+        grossCod: "QAR 495",
+        sourcingCost: "QAR 156",
+        deliveryFee: "QAR 49",
+        ordersCount: 38
+      }
+    ],
+    'Kuwait Direct': [
+      {
+        id: "63402-84236-kuwaitdirect_d93c416a-3406-40f3-9532-b16ed053c44.pdf",
+        invoiceName: "63402-84236-kuwaitdirect_d93c416a-3406-40f3-9532-b16ed053c44.pdf",
+        storeName: "Kuwait Direct",
+        payout: "KWD 195",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-13",
+        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
+        grossCod: "KWD 335",
+        sourcingCost: "KWD 105",
+        deliveryFee: "KWD 35",
+        ordersCount: 32
+      },
+      {
+        id: "63402-84224-kuwaitdirect_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
+        invoiceName: "63402-84224-kuwaitdirect_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
+        storeName: "Kuwait Direct",
+        payout: "KWD 215",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-11-06",
+        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
+        grossCod: "KWD 370",
+        sourcingCost: "KWD 116",
+        deliveryFee: "KWD 39",
+        ordersCount: 35
+      },
+      {
+        id: "63402-84211-kuwaitdirect_b71a294e-1284-48d1-7310-994cb831a22.pdf",
+        invoiceName: "63402-84211-kuwaitdirect_b71a294e-1284-48d1-7310-994cb831a22.pdf",
+        storeName: "Kuwait Direct",
+        payout: "KWD 180",
+        paymentStatus: "N/A",
+        paymentReason: "N/A",
+        dateOfInvoice: "2026-10-30",
+        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
+        grossCod: "KWD 310",
+        sourcingCost: "KWD 98",
+        deliveryFee: "KWD 32",
+        ordersCount: 29
+      }
+    ]
+  };
 
-  const allInvoices = [...AUTHENTIC_INVOICES, ...normalizedUserInvoices];
+  // Convert raw currentUser invoices into strictly 3-digit payout records
+  const extract3DigitPayout = (str, curr = 'AED') => {
+    if (!str) return `${curr} 284`;
+    const digits = str.replace(/[^0-9]/g, '');
+    const threeDigits = digits.slice(0, 3) || '284';
+    return `${curr} ${threeDigits}`;
+  };
 
-  // Filter based on selected store
-  const filteredInvoices = selectedStore === 'All Stores'
-    ? allInvoices
-    : allInvoices.filter(inv => inv.storeName.toLowerCase() === selectedStore.toLowerCase());
+  const currentStoreList = STORE_INVOICES[selectedStore] || STORE_INVOICES['EmirFlow'];
+  
+  // Combine all invoices for "All Stores" option
+  const allInvoices = selectedStore === 'All Stores'
+    ? Object.values(STORE_INVOICES).flat()
+    : currentStoreList;
 
-  const totalPages = Math.ceil(filteredInvoices.length / pageSize) || 1;
+  const totalPages = Math.ceil(allInvoices.length / pageSize) || 1;
   const startIndex = (currentPage - 1) * pageSize;
-  const paginatedInvoices = filteredInvoices.slice(startIndex, startIndex + pageSize);
+  const paginatedInvoices = allInvoices.slice(startIndex, startIndex + pageSize);
 
   const handleDownload = (invoice) => {
-    // Generate a simple downloadable invoice file simulation
     const content = `ZAMBEEL LOGISTICS & DROPSHIPPING PORTAL\n` +
       `OFFICIAL STORE INVOICE / REMITTANCE STATEMENT\n` +
       `--------------------------------------------------\n` +
@@ -168,10 +314,10 @@ export default function InvoicesPage({ currentUser }) {
       `Store Name: ${invoice.storeName}\n` +
       `Date of Invoice: ${invoice.dateOfInvoice}\n` +
       `Billing Period: ${invoice.billingPeriod}\n` +
-      `Total Net Payout: ${invoice.payout}\n` +
+      `Net Payout: ${invoice.payout}\n` +
       `Gross COD Collected: ${invoice.grossCod}\n` +
-      `Sourcing Cost: ${invoice.sourcingCost}\n` +
-      `Delivery & Handling Fee: ${invoice.deliveryFee}\n` +
+      `Product Sourcing Cost: ${invoice.sourcingCost}\n` +
+      `Zambeel Delivery Fee: ${invoice.deliveryFee}\n` +
       `Payment Status: ${invoice.paymentStatus}\n` +
       `Payment Reason: ${invoice.paymentReason}\n` +
       `--------------------------------------------------\n` +
@@ -191,7 +337,7 @@ export default function InvoicesPage({ currentUser }) {
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-12 animate-in fade-in duration-300">
       
-      {/* Exact Top Banner from Screenshot (media_1794754210389_48c2555a.jpg) */}
+      {/* Top Banner matching official Zambeel screenshot */}
       <div className="bg-gradient-to-r from-[#6b42f4] via-[#5b54f6] to-[#486ff8] rounded-2xl p-6 sm:p-8 text-white shadow-2xs">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
           My Invoices
@@ -202,7 +348,7 @@ export default function InvoicesPage({ currentUser }) {
       </div>
 
       {/* Main Invoices Card */}
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-2xs p-5 sm:p-8">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-2xs p-5 sm:p-7">
         
         {/* Card Header matching Screenshot */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4">
@@ -210,7 +356,7 @@ export default function InvoicesPage({ currentUser }) {
             Invoices
           </h2>
 
-          {/* Select Store Dropdown matching screenshot */}
+          {/* Select Store Dropdown - Unique store name per account */}
           <div className="flex items-center gap-3">
             <label className="text-xs sm:text-sm font-medium text-gray-700 whitespace-nowrap">
               Select Store
@@ -224,10 +370,9 @@ export default function InvoicesPage({ currentUser }) {
                 }}
                 className="w-full appearance-none bg-white border border-gray-200 rounded-lg px-4 py-2 text-xs sm:text-sm font-medium text-gray-800 hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400 pr-9 shadow-2xs cursor-pointer"
               >
-                <option value="EmirFlow">EmirFlow</option>
-                {currentUser?.storeName && currentUser.storeName !== 'EmirFlow' && (
-                  <option value={currentUser.storeName}>{currentUser.storeName}</option>
-                )}
+                {['EmirFlow', 'Riyadh Prime', 'Doha Elite', 'Kuwait Direct'].map((st) => (
+                  <option key={st} value={st}>{st}</option>
+                ))}
                 <option value="All Stores">All Stores</option>
               </select>
               <ChevronDown className="w-4 h-4 text-gray-500 absolute right-3 top-2.5 pointer-events-none" />
@@ -235,21 +380,21 @@ export default function InvoicesPage({ currentUser }) {
           </div>
         </div>
 
-        {/* Invoices Table */}
-        <div className="overflow-x-auto rounded-xl border border-gray-100 mt-4">
-          <table className="w-full text-left text-xs sm:text-sm border-collapse">
+        {/* Invoices Table: Non-scrollable with fixed widths fitting 100% */}
+        <div className="w-full rounded-xl border border-gray-100 overflow-hidden mt-4">
+          <table className="w-full table-fixed text-left text-xs sm:text-sm border-collapse">
             
-            {/* Thead with soft light blue background matching screenshot */}
+            {/* Thead with soft light blue background */}
             <thead className="bg-[#f0f6ff] text-[#1e293b] font-medium text-xs sm:text-sm">
               <tr>
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Invoice Name</th>
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Store Name</th>
-                {/* Payout column explicitly kept intact as requested */}
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Payout</th>
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Payment Status</th>
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Payment Reason</th>
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Date of Invoice</th>
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Download</th>
+                <th className="w-[32%] py-3.5 px-3 sm:px-4 font-semibold">Invoice Name</th>
+                <th className="w-[15%] py-3.5 px-3 sm:px-4 font-semibold">Store Name</th>
+                {/* Payout column strictly 3-digits */}
+                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Payout</th>
+                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Payment Status</th>
+                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Payment Reason</th>
+                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Date of Invoice</th>
+                <th className="w-[9%] py-3.5 px-2 sm:px-3 font-semibold text-right sm:text-left whitespace-nowrap">Download</th>
               </tr>
             </thead>
 
@@ -265,42 +410,49 @@ export default function InvoicesPage({ currentUser }) {
                 paginatedInvoices.map((inv) => (
                   <tr key={inv.id} className="hover:bg-gray-50/50 transition-colors">
                     
-                    {/* Invoice Name (long authentic hash-name) */}
-                    <td className="py-4 px-4 text-gray-700 font-mono text-xs max-w-xs sm:max-w-md truncate" title={inv.invoiceName}>
-                      {inv.invoiceName}
+                    {/* Invoice Name: compact and truncated, never stretching table */}
+                    <td className="py-3.5 px-3 sm:px-4">
+                      <span 
+                        className="font-mono text-[11px] sm:text-xs text-gray-700 truncate block max-w-full"
+                        title={inv.invoiceName}
+                      >
+                        {inv.invoiceName}
+                      </span>
                     </td>
 
                     {/* Store Name */}
-                    <td className="py-4 px-4 text-gray-700 whitespace-nowrap font-medium">
-                      {inv.storeName}
+                    <td className="py-3.5 px-3 sm:px-4 text-gray-700 font-medium">
+                      <span className="truncate block max-w-full" title={inv.storeName}>
+                        {inv.storeName}
+                      </span>
                     </td>
 
-                    {/* Payout (Net Payout kept intact) */}
-                    <td className="py-4 px-4 whitespace-nowrap font-semibold text-gray-900">
+                    {/* Payout: Strictly 3 digits */}
+                    <td className="py-3.5 px-3 sm:px-4 whitespace-nowrap font-semibold text-gray-900">
                       {inv.payout}
                     </td>
 
-                    {/* Payment Status (N/A in screenshot) */}
-                    <td className="py-4 px-4 text-gray-400 italic whitespace-nowrap">
+                    {/* Payment Status (N/A) */}
+                    <td className="py-3.5 px-3 sm:px-4 text-gray-400 italic whitespace-nowrap">
                       {inv.paymentStatus}
                     </td>
 
-                    {/* Payment Reason (N/A in screenshot) */}
-                    <td className="py-4 px-4 text-gray-400 italic whitespace-nowrap">
+                    {/* Payment Reason (N/A) */}
+                    <td className="py-3.5 px-3 sm:px-4 text-gray-400 italic whitespace-nowrap">
                       {inv.paymentReason}
                     </td>
 
                     {/* Date of Invoice */}
-                    <td className="py-4 px-4 text-gray-700 whitespace-nowrap">
+                    <td className="py-3.5 px-3 sm:px-4 text-gray-700 whitespace-nowrap">
                       {inv.dateOfInvoice}
                     </td>
 
-                    {/* Download Button matching screenshot */}
-                    <td className="py-4 px-4 whitespace-nowrap">
-                      <div className="flex items-center gap-2">
+                    {/* Download Button */}
+                    <td className="py-3.5 px-2 sm:px-3 whitespace-nowrap text-right sm:text-left">
+                      <div className="flex items-center gap-1.5">
                         <button
                           onClick={() => handleDownload(inv)}
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#f0f6ff] hover:bg-blue-100 text-[#2563eb] text-xs font-semibold rounded-lg border border-blue-100 transition-colors cursor-pointer shadow-2xs"
+                          className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-[#f0f6ff] hover:bg-blue-100 text-[#2563eb] text-xs font-semibold rounded-lg border border-blue-100 transition-colors cursor-pointer shadow-2xs"
                         >
                           <Download className="w-3.5 h-3.5 text-[#2563eb]" />
                           <span>Download</span>
@@ -322,7 +474,7 @@ export default function InvoicesPage({ currentUser }) {
           </table>
         </div>
 
-        {/* Pagination Footer matching screenshot */}
+        {/* Pagination Footer */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 pt-2">
           
           {/* Left pagination controls: < [ 1 ] > */}
@@ -401,7 +553,7 @@ export default function InvoicesPage({ currentUser }) {
 
       </div>
 
-      {/* Invoice Detail Modal for full transparency */}
+      {/* Invoice Detail Modal */}
       {activeInvoiceDetail && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
           <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-100">

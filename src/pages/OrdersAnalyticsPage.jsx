@@ -17,10 +17,17 @@ import {
 } from 'lucide-react';
 
 export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders }) {
-  const [selectedStore, setSelectedStore] = useState('EmirFlow');
+  const [selectedStore, setSelectedStore] = useState(currentUser?.storeName || 'EmirFlow');
   const [selectedTimePeriod, setSelectedTimePeriod] = useState('Last 30 days');
   const [selectedCountry, setSelectedCountry] = useState('All Countries');
   const [selectedProduct, setSelectedProduct] = useState('All Products');
+
+  // Sync store when user switches account
+  React.useEffect(() => {
+    if (currentUser?.storeName) {
+      setSelectedStore(currentUser.storeName);
+    }
+  }, [currentUser]);
 
   // We can calculate dynamic counts based on currentUser orders, or default to authentic Zambeel figures
   const orders = currentUser?.orders || [];
@@ -69,8 +76,9 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               onChange={(e) => setSelectedStore(e.target.value)}
               className="w-full appearance-none bg-white border border-gray-300 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-medium text-gray-800 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 pr-9 shadow-2xs cursor-pointer"
             >
-              <option value="EmirFlow">EmirFlow</option>
-              {currentUser?.storeName && <option value={currentUser.storeName}>{currentUser.storeName}</option>}
+              {['EmirFlow', 'Riyadh Prime', 'Doha Elite', 'Kuwait Direct'].map((st) => (
+                <option key={st} value={st}>{st}</option>
+              ))}
               <option value="All Stores">All Stores</option>
             </select>
             <ChevronDown className="w-4 h-4 text-gray-500 absolute right-3 top-3 pointer-events-none" />

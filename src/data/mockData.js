@@ -159,7 +159,7 @@ export const USERS = [
     "market": "UAE",
     "currency": "AED",
     "balance": "24,650.00 AED",
-    "storeName": "Niks Trends Dubai (Shopify)",
+    "storeName": "EmirFlow",
     "storeId": "dubai_trends",
     "phone": "+971 50 123 4567",
     "bankTitle": "Nikhil Kumar Kushwaha",
@@ -1216,7 +1216,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1200",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Nov 08, 2026 - Nov 14, 2026",
         "grossCodCollected": "441.00 AED",
         "sourcingCost": "178.50 AED",
@@ -1230,7 +1230,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1198",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Nov 01, 2026 - Nov 07, 2026",
         "grossCodCollected": "497.70 AED",
         "sourcingCost": "201.45 AED",
@@ -1244,7 +1244,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1196",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 25, 2026 - Oct 31, 2026",
         "grossCodCollected": "554.40 AED",
         "sourcingCost": "224.40 AED",
@@ -1258,7 +1258,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1194",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 18, 2026 - Oct 24, 2026",
         "grossCodCollected": "611.10 AED",
         "sourcingCost": "247.35 AED",
@@ -1272,7 +1272,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1192",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 11, 2026 - Oct 17, 2026",
         "grossCodCollected": "667.80 AED",
         "sourcingCost": "270.30 AED",
@@ -1286,7 +1286,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1190",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 04, 2026 - Oct 10, 2026",
         "grossCodCollected": "724.50 AED",
         "sourcingCost": "293.25 AED",
@@ -1300,7 +1300,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1188",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 27, 2026 - Oct 03, 2026",
         "grossCodCollected": "781.20 AED",
         "sourcingCost": "316.20 AED",
@@ -1314,7 +1314,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1186",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 20, 2026 - Sep 26, 2026",
         "grossCodCollected": "837.90 AED",
         "sourcingCost": "339.15 AED",
@@ -1328,7 +1328,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1184",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 13, 2026 - Sep 19, 2026",
         "grossCodCollected": "894.60 AED",
         "sourcingCost": "362.10 AED",
@@ -1342,7 +1342,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1182",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 06, 2026 - Sep 12, 2026",
         "grossCodCollected": "951.30 AED",
         "sourcingCost": "385.05 AED",
@@ -1356,7 +1356,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1180",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 30, 2026 - Sep 05, 2026",
         "grossCodCollected": "1008.00 AED",
         "sourcingCost": "408.00 AED",
@@ -1370,7 +1370,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1178",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 23, 2026 - Aug 29, 2026",
         "grossCodCollected": "1064.70 AED",
         "sourcingCost": "430.95 AED",
@@ -1384,7 +1384,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1176",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 16, 2026 - Aug 22, 2026",
         "grossCodCollected": "1121.40 AED",
         "sourcingCost": "453.90 AED",
@@ -1398,7 +1398,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1174",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 09, 2026 - Aug 15, 2026",
         "grossCodCollected": "1178.10 AED",
         "sourcingCost": "476.85 AED",
@@ -1412,7 +1412,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1172",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 02, 2026 - Aug 08, 2026",
         "grossCodCollected": "1234.80 AED",
         "sourcingCost": "499.80 AED",
@@ -1426,7 +1426,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1170",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jul 26, 2026 - Aug 01, 2026",
         "grossCodCollected": "1291.50 AED",
         "sourcingCost": "522.75 AED",
@@ -1440,7 +1440,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1168",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jul 19, 2026 - Jul 25, 2026",
         "grossCodCollected": "1348.20 AED",
         "sourcingCost": "545.70 AED",
@@ -1454,7 +1454,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1166",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jul 12, 2026 - Jul 18, 2026",
         "grossCodCollected": "1404.90 AED",
         "sourcingCost": "568.65 AED",
@@ -1468,7 +1468,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1164",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jul 05, 2026 - Jul 11, 2026",
         "grossCodCollected": "1461.60 AED",
         "sourcingCost": "591.60 AED",
@@ -1482,7 +1482,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1162",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jun 28, 2026 - Jul 04, 2026",
         "grossCodCollected": "1518.30 AED",
         "sourcingCost": "614.55 AED",
@@ -1496,7 +1496,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1160",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jun 21, 2026 - Jun 27, 2026",
         "grossCodCollected": "1575.00 AED",
         "sourcingCost": "637.50 AED",
@@ -1510,7 +1510,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1158",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jun 14, 2026 - Jun 20, 2026",
         "grossCodCollected": "455.70 AED",
         "sourcingCost": "184.45 AED",
@@ -1524,7 +1524,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1156",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jun 07, 2026 - Jun 13, 2026",
         "grossCodCollected": "512.40 AED",
         "sourcingCost": "207.40 AED",
@@ -1538,7 +1538,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1154",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "May 31, 2026 - Jun 06, 2026",
         "grossCodCollected": "569.10 AED",
         "sourcingCost": "230.35 AED",
@@ -1552,7 +1552,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1152",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "May 24, 2026 - May 30, 2026",
         "grossCodCollected": "625.80 AED",
         "sourcingCost": "253.30 AED",
@@ -1566,7 +1566,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1150",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "May 17, 2026 - May 23, 2026",
         "grossCodCollected": "682.50 AED",
         "sourcingCost": "276.25 AED",
@@ -1580,7 +1580,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1148",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "May 10, 2026 - May 16, 2026",
         "grossCodCollected": "739.20 AED",
         "sourcingCost": "299.20 AED",
@@ -1594,7 +1594,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1146",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "May 03, 2026 - May 09, 2026",
         "grossCodCollected": "795.90 AED",
         "sourcingCost": "322.15 AED",
@@ -1608,7 +1608,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1144",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Apr 26, 2026 - May 02, 2026",
         "grossCodCollected": "852.60 AED",
         "sourcingCost": "345.10 AED",
@@ -1622,7 +1622,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1142",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Apr 19, 2026 - Apr 25, 2026",
         "grossCodCollected": "909.30 AED",
         "sourcingCost": "368.05 AED",
@@ -1636,7 +1636,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1140",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Apr 12, 2026 - Apr 18, 2026",
         "grossCodCollected": "966.00 AED",
         "sourcingCost": "391.00 AED",
@@ -1650,7 +1650,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1138",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Apr 05, 2026 - Apr 11, 2026",
         "grossCodCollected": "1022.70 AED",
         "sourcingCost": "413.95 AED",
@@ -1664,7 +1664,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1136",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Mar 29, 2026 - Apr 04, 2026",
         "grossCodCollected": "1079.40 AED",
         "sourcingCost": "436.90 AED",
@@ -1678,7 +1678,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1134",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Mar 22, 2026 - Mar 28, 2026",
         "grossCodCollected": "1136.10 AED",
         "sourcingCost": "459.85 AED",
@@ -1692,7 +1692,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1132",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Mar 15, 2026 - Mar 21, 2026",
         "grossCodCollected": "1192.80 AED",
         "sourcingCost": "482.80 AED",
@@ -1706,7 +1706,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1130",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Mar 08, 2026 - Mar 14, 2026",
         "grossCodCollected": "1249.50 AED",
         "sourcingCost": "505.75 AED",
@@ -1720,7 +1720,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1128",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Mar 01, 2026 - Mar 07, 2026",
         "grossCodCollected": "1306.20 AED",
         "sourcingCost": "528.70 AED",
@@ -1734,7 +1734,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1126",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Feb 22, 2026 - Feb 28, 2026",
         "grossCodCollected": "1362.90 AED",
         "sourcingCost": "551.65 AED",
@@ -1748,7 +1748,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1124",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Feb 15, 2026 - Feb 21, 2026",
         "grossCodCollected": "1419.60 AED",
         "sourcingCost": "574.60 AED",
@@ -1762,7 +1762,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1122",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Feb 08, 2026 - Feb 14, 2026",
         "grossCodCollected": "1476.30 AED",
         "sourcingCost": "597.55 AED",
@@ -1776,7 +1776,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1120",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Feb 01, 2026 - Feb 07, 2026",
         "grossCodCollected": "1533.00 AED",
         "sourcingCost": "620.50 AED",
@@ -1790,7 +1790,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1118",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jan 25, 2026 - Jan 31, 2026",
         "grossCodCollected": "1589.70 AED",
         "sourcingCost": "643.45 AED",
@@ -1804,7 +1804,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1116",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jan 18, 2026 - Jan 24, 2026",
         "grossCodCollected": "470.40 AED",
         "sourcingCost": "190.40 AED",
@@ -1818,7 +1818,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1114",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jan 11, 2026 - Jan 17, 2026",
         "grossCodCollected": "527.10 AED",
         "sourcingCost": "213.35 AED",
@@ -1832,7 +1832,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1112",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Jan 04, 2026 - Jan 10, 2026",
         "grossCodCollected": "583.80 AED",
         "sourcingCost": "236.30 AED",
@@ -1846,7 +1846,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1110",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Dec 28, 2025 - Jan 03, 2026",
         "grossCodCollected": "640.50 AED",
         "sourcingCost": "259.25 AED",
@@ -1860,7 +1860,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1108",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Dec 21, 2025 - Dec 27, 2025",
         "grossCodCollected": "697.20 AED",
         "sourcingCost": "282.20 AED",
@@ -1874,7 +1874,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1106",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Dec 14, 2025 - Dec 20, 2025",
         "grossCodCollected": "753.90 AED",
         "sourcingCost": "305.15 AED",
@@ -1888,7 +1888,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1104",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Dec 07, 2025 - Dec 13, 2025",
         "grossCodCollected": "810.60 AED",
         "sourcingCost": "328.10 AED",
@@ -1902,7 +1902,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1102",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Nov 30, 2025 - Dec 06, 2025",
         "grossCodCollected": "867.30 AED",
         "sourcingCost": "351.05 AED",
@@ -1916,7 +1916,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1100",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Nov 23, 2025 - Nov 29, 2025",
         "grossCodCollected": "924.00 AED",
         "sourcingCost": "374.00 AED",
@@ -1930,7 +1930,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1098",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Nov 16, 2025 - Nov 22, 2025",
         "grossCodCollected": "980.70 AED",
         "sourcingCost": "396.95 AED",
@@ -1944,7 +1944,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1096",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Nov 09, 2025 - Nov 15, 2025",
         "grossCodCollected": "1037.40 AED",
         "sourcingCost": "419.90 AED",
@@ -1958,7 +1958,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1094",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Nov 02, 2025 - Nov 08, 2025",
         "grossCodCollected": "1094.10 AED",
         "sourcingCost": "442.85 AED",
@@ -1972,7 +1972,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1092",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 26, 2025 - Nov 01, 2025",
         "grossCodCollected": "1150.80 AED",
         "sourcingCost": "465.80 AED",
@@ -1986,7 +1986,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1090",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 19, 2025 - Oct 25, 2025",
         "grossCodCollected": "1207.50 AED",
         "sourcingCost": "488.75 AED",
@@ -2000,7 +2000,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1088",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 12, 2025 - Oct 18, 2025",
         "grossCodCollected": "1264.20 AED",
         "sourcingCost": "511.70 AED",
@@ -2014,7 +2014,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1086",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Oct 05, 2025 - Oct 11, 2025",
         "grossCodCollected": "1320.90 AED",
         "sourcingCost": "534.65 AED",
@@ -2028,7 +2028,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1084",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 28, 2025 - Oct 04, 2025",
         "grossCodCollected": "1377.60 AED",
         "sourcingCost": "557.60 AED",
@@ -2042,7 +2042,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1082",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 21, 2025 - Sep 27, 2025",
         "grossCodCollected": "1434.30 AED",
         "sourcingCost": "580.55 AED",
@@ -2056,7 +2056,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1080",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 14, 2025 - Sep 20, 2025",
         "grossCodCollected": "1491.00 AED",
         "sourcingCost": "603.50 AED",
@@ -2070,7 +2070,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1078",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Sep 07, 2025 - Sep 13, 2025",
         "grossCodCollected": "1547.70 AED",
         "sourcingCost": "626.45 AED",
@@ -2084,7 +2084,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1076",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 31, 2025 - Sep 06, 2025",
         "grossCodCollected": "1604.40 AED",
         "sourcingCost": "649.40 AED",
@@ -2098,7 +2098,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1074",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 24, 2025 - Aug 30, 2025",
         "grossCodCollected": "485.10 AED",
         "sourcingCost": "196.35 AED",
@@ -2112,7 +2112,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1072",
         "storeId": "dubai_trends",
-        "storeName": "Niks Trends Dubai (Shopify)",
+        "storeName": "EmirFlow",
         "billingPeriod": "Aug 17, 2025 - Aug 23, 2025",
         "grossCodCollected": "541.80 AED",
         "sourcingCost": "219.30 AED",
@@ -2134,7 +2134,7 @@ export const USERS = [
     "market": "KSA",
     "currency": "SAR",
     "balance": "48,200.00 SAR",
-    "storeName": "Zambeel Prime Riyadh (Salla)",
+    "storeName": "Riyadh Prime",
     "storeId": "saudi_gadgets",
     "phone": "+966 50 987 6543",
     "bankTitle": "Fatima Al-Dosari Est.",
@@ -3191,7 +3191,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2200",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Nov 08, 2026 - Nov 14, 2026",
         "grossCodCollected": "674.10 SAR",
         "sourcingCost": "272.85 SAR",
@@ -3205,7 +3205,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2198",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Nov 01, 2026 - Nov 07, 2026",
         "grossCodCollected": "739.20 SAR",
         "sourcingCost": "299.20 SAR",
@@ -3219,7 +3219,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2196",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 25, 2026 - Oct 31, 2026",
         "grossCodCollected": "804.30 SAR",
         "sourcingCost": "325.55 SAR",
@@ -3233,7 +3233,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2194",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 18, 2026 - Oct 24, 2026",
         "grossCodCollected": "869.40 SAR",
         "sourcingCost": "351.90 SAR",
@@ -3247,7 +3247,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2192",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 11, 2026 - Oct 17, 2026",
         "grossCodCollected": "934.50 SAR",
         "sourcingCost": "378.25 SAR",
@@ -3261,7 +3261,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2190",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 04, 2026 - Oct 10, 2026",
         "grossCodCollected": "999.60 SAR",
         "sourcingCost": "404.60 SAR",
@@ -3275,7 +3275,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2188",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 27, 2026 - Oct 03, 2026",
         "grossCodCollected": "1064.70 SAR",
         "sourcingCost": "430.95 SAR",
@@ -3289,7 +3289,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2186",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 20, 2026 - Sep 26, 2026",
         "grossCodCollected": "1129.80 SAR",
         "sourcingCost": "457.30 SAR",
@@ -3303,7 +3303,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2184",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 13, 2026 - Sep 19, 2026",
         "grossCodCollected": "1194.90 SAR",
         "sourcingCost": "483.65 SAR",
@@ -3317,7 +3317,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2182",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 06, 2026 - Sep 12, 2026",
         "grossCodCollected": "1260.00 SAR",
         "sourcingCost": "510.00 SAR",
@@ -3331,7 +3331,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2180",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 30, 2026 - Sep 05, 2026",
         "grossCodCollected": "1325.10 SAR",
         "sourcingCost": "536.35 SAR",
@@ -3345,7 +3345,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2178",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 23, 2026 - Aug 29, 2026",
         "grossCodCollected": "1390.20 SAR",
         "sourcingCost": "562.70 SAR",
@@ -3359,7 +3359,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2176",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 16, 2026 - Aug 22, 2026",
         "grossCodCollected": "1455.30 SAR",
         "sourcingCost": "589.05 SAR",
@@ -3373,7 +3373,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2174",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 09, 2026 - Aug 15, 2026",
         "grossCodCollected": "1520.40 SAR",
         "sourcingCost": "615.40 SAR",
@@ -3387,7 +3387,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2172",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 02, 2026 - Aug 08, 2026",
         "grossCodCollected": "1585.50 SAR",
         "sourcingCost": "641.75 SAR",
@@ -3401,7 +3401,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2170",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jul 26, 2026 - Aug 01, 2026",
         "grossCodCollected": "1650.60 SAR",
         "sourcingCost": "668.10 SAR",
@@ -3415,7 +3415,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2168",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jul 19, 2026 - Jul 25, 2026",
         "grossCodCollected": "623.70 SAR",
         "sourcingCost": "252.45 SAR",
@@ -3429,7 +3429,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2166",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jul 12, 2026 - Jul 18, 2026",
         "grossCodCollected": "688.80 SAR",
         "sourcingCost": "278.80 SAR",
@@ -3443,7 +3443,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2164",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jul 05, 2026 - Jul 11, 2026",
         "grossCodCollected": "753.90 SAR",
         "sourcingCost": "305.15 SAR",
@@ -3457,7 +3457,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2162",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jun 28, 2026 - Jul 04, 2026",
         "grossCodCollected": "819.00 SAR",
         "sourcingCost": "331.50 SAR",
@@ -3471,7 +3471,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2160",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jun 21, 2026 - Jun 27, 2026",
         "grossCodCollected": "884.10 SAR",
         "sourcingCost": "357.85 SAR",
@@ -3485,7 +3485,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2158",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jun 14, 2026 - Jun 20, 2026",
         "grossCodCollected": "949.20 SAR",
         "sourcingCost": "384.20 SAR",
@@ -3499,7 +3499,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2156",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jun 07, 2026 - Jun 13, 2026",
         "grossCodCollected": "1014.30 SAR",
         "sourcingCost": "410.55 SAR",
@@ -3513,7 +3513,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2154",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "May 31, 2026 - Jun 06, 2026",
         "grossCodCollected": "1079.40 SAR",
         "sourcingCost": "436.90 SAR",
@@ -3527,7 +3527,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2152",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "May 24, 2026 - May 30, 2026",
         "grossCodCollected": "1144.50 SAR",
         "sourcingCost": "463.25 SAR",
@@ -3541,7 +3541,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2150",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "May 17, 2026 - May 23, 2026",
         "grossCodCollected": "1209.60 SAR",
         "sourcingCost": "489.60 SAR",
@@ -3555,7 +3555,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2148",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "May 10, 2026 - May 16, 2026",
         "grossCodCollected": "1274.70 SAR",
         "sourcingCost": "515.95 SAR",
@@ -3569,7 +3569,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2146",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "May 03, 2026 - May 09, 2026",
         "grossCodCollected": "1339.80 SAR",
         "sourcingCost": "542.30 SAR",
@@ -3583,7 +3583,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2144",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Apr 26, 2026 - May 02, 2026",
         "grossCodCollected": "1404.90 SAR",
         "sourcingCost": "568.65 SAR",
@@ -3597,7 +3597,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2142",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Apr 19, 2026 - Apr 25, 2026",
         "grossCodCollected": "1470.00 SAR",
         "sourcingCost": "595.00 SAR",
@@ -3611,7 +3611,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2140",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Apr 12, 2026 - Apr 18, 2026",
         "grossCodCollected": "1535.10 SAR",
         "sourcingCost": "621.35 SAR",
@@ -3625,7 +3625,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2138",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Apr 05, 2026 - Apr 11, 2026",
         "grossCodCollected": "1600.20 SAR",
         "sourcingCost": "647.70 SAR",
@@ -3639,7 +3639,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2136",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Mar 29, 2026 - Apr 04, 2026",
         "grossCodCollected": "1665.30 SAR",
         "sourcingCost": "674.05 SAR",
@@ -3653,7 +3653,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2134",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Mar 22, 2026 - Mar 28, 2026",
         "grossCodCollected": "638.40 SAR",
         "sourcingCost": "258.40 SAR",
@@ -3667,7 +3667,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2132",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Mar 15, 2026 - Mar 21, 2026",
         "grossCodCollected": "703.50 SAR",
         "sourcingCost": "284.75 SAR",
@@ -3681,7 +3681,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2130",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Mar 08, 2026 - Mar 14, 2026",
         "grossCodCollected": "768.60 SAR",
         "sourcingCost": "311.10 SAR",
@@ -3695,7 +3695,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2128",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Mar 01, 2026 - Mar 07, 2026",
         "grossCodCollected": "833.70 SAR",
         "sourcingCost": "337.45 SAR",
@@ -3709,7 +3709,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2126",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Feb 22, 2026 - Feb 28, 2026",
         "grossCodCollected": "898.80 SAR",
         "sourcingCost": "363.80 SAR",
@@ -3723,7 +3723,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2124",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Feb 15, 2026 - Feb 21, 2026",
         "grossCodCollected": "963.90 SAR",
         "sourcingCost": "390.15 SAR",
@@ -3737,7 +3737,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2122",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Feb 08, 2026 - Feb 14, 2026",
         "grossCodCollected": "1029.00 SAR",
         "sourcingCost": "416.50 SAR",
@@ -3751,7 +3751,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2120",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Feb 01, 2026 - Feb 07, 2026",
         "grossCodCollected": "1094.10 SAR",
         "sourcingCost": "442.85 SAR",
@@ -3765,7 +3765,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2118",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jan 25, 2026 - Jan 31, 2026",
         "grossCodCollected": "1159.20 SAR",
         "sourcingCost": "469.20 SAR",
@@ -3779,7 +3779,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2116",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jan 18, 2026 - Jan 24, 2026",
         "grossCodCollected": "1224.30 SAR",
         "sourcingCost": "495.55 SAR",
@@ -3793,7 +3793,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2114",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jan 11, 2026 - Jan 17, 2026",
         "grossCodCollected": "1289.40 SAR",
         "sourcingCost": "521.90 SAR",
@@ -3807,7 +3807,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2112",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Jan 04, 2026 - Jan 10, 2026",
         "grossCodCollected": "1354.50 SAR",
         "sourcingCost": "548.25 SAR",
@@ -3821,7 +3821,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2110",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Dec 28, 2025 - Jan 03, 2026",
         "grossCodCollected": "1419.60 SAR",
         "sourcingCost": "574.60 SAR",
@@ -3835,7 +3835,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2108",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Dec 21, 2025 - Dec 27, 2025",
         "grossCodCollected": "1484.70 SAR",
         "sourcingCost": "600.95 SAR",
@@ -3849,7 +3849,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2106",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Dec 14, 2025 - Dec 20, 2025",
         "grossCodCollected": "1549.80 SAR",
         "sourcingCost": "627.30 SAR",
@@ -3863,7 +3863,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2104",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Dec 07, 2025 - Dec 13, 2025",
         "grossCodCollected": "1614.90 SAR",
         "sourcingCost": "653.65 SAR",
@@ -3877,7 +3877,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2102",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Nov 30, 2025 - Dec 06, 2025",
         "grossCodCollected": "588.00 SAR",
         "sourcingCost": "238.00 SAR",
@@ -3891,7 +3891,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2100",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Nov 23, 2025 - Nov 29, 2025",
         "grossCodCollected": "653.10 SAR",
         "sourcingCost": "264.35 SAR",
@@ -3905,7 +3905,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2098",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Nov 16, 2025 - Nov 22, 2025",
         "grossCodCollected": "718.20 SAR",
         "sourcingCost": "290.70 SAR",
@@ -3919,7 +3919,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2096",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Nov 09, 2025 - Nov 15, 2025",
         "grossCodCollected": "783.30 SAR",
         "sourcingCost": "317.05 SAR",
@@ -3933,7 +3933,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2094",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Nov 02, 2025 - Nov 08, 2025",
         "grossCodCollected": "848.40 SAR",
         "sourcingCost": "343.40 SAR",
@@ -3947,7 +3947,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2092",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 26, 2025 - Nov 01, 2025",
         "grossCodCollected": "913.50 SAR",
         "sourcingCost": "369.75 SAR",
@@ -3961,7 +3961,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2090",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 19, 2025 - Oct 25, 2025",
         "grossCodCollected": "978.60 SAR",
         "sourcingCost": "396.10 SAR",
@@ -3975,7 +3975,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2088",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 12, 2025 - Oct 18, 2025",
         "grossCodCollected": "1043.70 SAR",
         "sourcingCost": "422.45 SAR",
@@ -3989,7 +3989,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2086",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Oct 05, 2025 - Oct 11, 2025",
         "grossCodCollected": "1108.80 SAR",
         "sourcingCost": "448.80 SAR",
@@ -4003,7 +4003,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2084",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 28, 2025 - Oct 04, 2025",
         "grossCodCollected": "1173.90 SAR",
         "sourcingCost": "475.15 SAR",
@@ -4017,7 +4017,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2082",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 21, 2025 - Sep 27, 2025",
         "grossCodCollected": "1239.00 SAR",
         "sourcingCost": "501.50 SAR",
@@ -4031,7 +4031,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2080",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 14, 2025 - Sep 20, 2025",
         "grossCodCollected": "1304.10 SAR",
         "sourcingCost": "527.85 SAR",
@@ -4045,7 +4045,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2078",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Sep 07, 2025 - Sep 13, 2025",
         "grossCodCollected": "1369.20 SAR",
         "sourcingCost": "554.20 SAR",
@@ -4059,7 +4059,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2076",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 31, 2025 - Sep 06, 2025",
         "grossCodCollected": "1434.30 SAR",
         "sourcingCost": "580.55 SAR",
@@ -4073,7 +4073,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2074",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 24, 2025 - Aug 30, 2025",
         "grossCodCollected": "1499.40 SAR",
         "sourcingCost": "606.90 SAR",
@@ -4087,7 +4087,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-2072",
         "storeId": "saudi_gadgets",
-        "storeName": "Zambeel Prime Riyadh (Salla)",
+        "storeName": "Riyadh Prime",
         "billingPeriod": "Aug 17, 2025 - Aug 23, 2025",
         "grossCodCollected": "1564.50 SAR",
         "sourcingCost": "633.25 SAR",
@@ -4109,7 +4109,7 @@ export const USERS = [
     "market": "Qatar",
     "currency": "QAR",
     "balance": "31,800.00 QAR",
-    "storeName": "Doha Elite Mart (WooCommerce)",
+    "storeName": "Doha Elite",
     "storeId": "qatar_store",
     "phone": "+974 33 456 789",
     "bankTitle": "Ahmed Al-Thani Trading",
@@ -5166,7 +5166,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3200",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Nov 08, 2026 - Nov 14, 2026",
         "grossCodCollected": "680.40 QAR",
         "sourcingCost": "275.40 QAR",
@@ -5180,7 +5180,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3198",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Nov 01, 2026 - Nov 07, 2026",
         "grossCodCollected": "741.30 QAR",
         "sourcingCost": "300.05 QAR",
@@ -5194,7 +5194,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3196",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 25, 2026 - Oct 31, 2026",
         "grossCodCollected": "802.20 QAR",
         "sourcingCost": "324.70 QAR",
@@ -5208,7 +5208,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3194",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 18, 2026 - Oct 24, 2026",
         "grossCodCollected": "863.10 QAR",
         "sourcingCost": "349.35 QAR",
@@ -5222,7 +5222,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3192",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 11, 2026 - Oct 17, 2026",
         "grossCodCollected": "924.00 QAR",
         "sourcingCost": "374.00 QAR",
@@ -5236,7 +5236,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3190",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 04, 2026 - Oct 10, 2026",
         "grossCodCollected": "984.90 QAR",
         "sourcingCost": "398.65 QAR",
@@ -5250,7 +5250,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3188",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 27, 2026 - Oct 03, 2026",
         "grossCodCollected": "1045.80 QAR",
         "sourcingCost": "423.30 QAR",
@@ -5264,7 +5264,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3186",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 20, 2026 - Sep 26, 2026",
         "grossCodCollected": "1106.70 QAR",
         "sourcingCost": "447.95 QAR",
@@ -5278,7 +5278,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3184",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 13, 2026 - Sep 19, 2026",
         "grossCodCollected": "1167.60 QAR",
         "sourcingCost": "472.60 QAR",
@@ -5292,7 +5292,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3182",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 06, 2026 - Sep 12, 2026",
         "grossCodCollected": "1228.50 QAR",
         "sourcingCost": "497.25 QAR",
@@ -5306,7 +5306,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3180",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 30, 2026 - Sep 05, 2026",
         "grossCodCollected": "1289.40 QAR",
         "sourcingCost": "521.90 QAR",
@@ -5320,7 +5320,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3178",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 23, 2026 - Aug 29, 2026",
         "grossCodCollected": "1350.30 QAR",
         "sourcingCost": "546.55 QAR",
@@ -5334,7 +5334,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3176",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 16, 2026 - Aug 22, 2026",
         "grossCodCollected": "1411.20 QAR",
         "sourcingCost": "571.20 QAR",
@@ -5348,7 +5348,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3174",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 09, 2026 - Aug 15, 2026",
         "grossCodCollected": "527.10 QAR",
         "sourcingCost": "213.35 QAR",
@@ -5362,7 +5362,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3172",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 02, 2026 - Aug 08, 2026",
         "grossCodCollected": "588.00 QAR",
         "sourcingCost": "238.00 QAR",
@@ -5376,7 +5376,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3170",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jul 26, 2026 - Aug 01, 2026",
         "grossCodCollected": "648.90 QAR",
         "sourcingCost": "262.65 QAR",
@@ -5390,7 +5390,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3168",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jul 19, 2026 - Jul 25, 2026",
         "grossCodCollected": "709.80 QAR",
         "sourcingCost": "287.30 QAR",
@@ -5404,7 +5404,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3166",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jul 12, 2026 - Jul 18, 2026",
         "grossCodCollected": "770.70 QAR",
         "sourcingCost": "311.95 QAR",
@@ -5418,7 +5418,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3164",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jul 05, 2026 - Jul 11, 2026",
         "grossCodCollected": "831.60 QAR",
         "sourcingCost": "336.60 QAR",
@@ -5432,7 +5432,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3162",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jun 28, 2026 - Jul 04, 2026",
         "grossCodCollected": "892.50 QAR",
         "sourcingCost": "361.25 QAR",
@@ -5446,7 +5446,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3160",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jun 21, 2026 - Jun 27, 2026",
         "grossCodCollected": "953.40 QAR",
         "sourcingCost": "385.90 QAR",
@@ -5460,7 +5460,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3158",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jun 14, 2026 - Jun 20, 2026",
         "grossCodCollected": "1014.30 QAR",
         "sourcingCost": "410.55 QAR",
@@ -5474,7 +5474,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3156",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jun 07, 2026 - Jun 13, 2026",
         "grossCodCollected": "1075.20 QAR",
         "sourcingCost": "435.20 QAR",
@@ -5488,7 +5488,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3154",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "May 31, 2026 - Jun 06, 2026",
         "grossCodCollected": "1136.10 QAR",
         "sourcingCost": "459.85 QAR",
@@ -5502,7 +5502,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3152",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "May 24, 2026 - May 30, 2026",
         "grossCodCollected": "1197.00 QAR",
         "sourcingCost": "484.50 QAR",
@@ -5516,7 +5516,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3150",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "May 17, 2026 - May 23, 2026",
         "grossCodCollected": "1257.90 QAR",
         "sourcingCost": "509.15 QAR",
@@ -5530,7 +5530,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3148",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "May 10, 2026 - May 16, 2026",
         "grossCodCollected": "1318.80 QAR",
         "sourcingCost": "533.80 QAR",
@@ -5544,7 +5544,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3146",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "May 03, 2026 - May 09, 2026",
         "grossCodCollected": "1379.70 QAR",
         "sourcingCost": "558.45 QAR",
@@ -5558,7 +5558,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3144",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Apr 26, 2026 - May 02, 2026",
         "grossCodCollected": "1440.60 QAR",
         "sourcingCost": "583.10 QAR",
@@ -5572,7 +5572,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3142",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Apr 19, 2026 - Apr 25, 2026",
         "grossCodCollected": "556.50 QAR",
         "sourcingCost": "225.25 QAR",
@@ -5586,7 +5586,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3140",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Apr 12, 2026 - Apr 18, 2026",
         "grossCodCollected": "617.40 QAR",
         "sourcingCost": "249.90 QAR",
@@ -5600,7 +5600,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3138",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Apr 05, 2026 - Apr 11, 2026",
         "grossCodCollected": "678.30 QAR",
         "sourcingCost": "274.55 QAR",
@@ -5614,7 +5614,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3136",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Mar 29, 2026 - Apr 04, 2026",
         "grossCodCollected": "739.20 QAR",
         "sourcingCost": "299.20 QAR",
@@ -5628,7 +5628,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3134",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Mar 22, 2026 - Mar 28, 2026",
         "grossCodCollected": "800.10 QAR",
         "sourcingCost": "323.85 QAR",
@@ -5642,7 +5642,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3132",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Mar 15, 2026 - Mar 21, 2026",
         "grossCodCollected": "861.00 QAR",
         "sourcingCost": "348.50 QAR",
@@ -5656,7 +5656,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3130",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Mar 08, 2026 - Mar 14, 2026",
         "grossCodCollected": "921.90 QAR",
         "sourcingCost": "373.15 QAR",
@@ -5670,7 +5670,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3128",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Mar 01, 2026 - Mar 07, 2026",
         "grossCodCollected": "982.80 QAR",
         "sourcingCost": "397.80 QAR",
@@ -5684,7 +5684,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3126",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Feb 22, 2026 - Feb 28, 2026",
         "grossCodCollected": "1043.70 QAR",
         "sourcingCost": "422.45 QAR",
@@ -5698,7 +5698,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3124",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Feb 15, 2026 - Feb 21, 2026",
         "grossCodCollected": "1104.60 QAR",
         "sourcingCost": "447.10 QAR",
@@ -5712,7 +5712,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3122",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Feb 08, 2026 - Feb 14, 2026",
         "grossCodCollected": "1165.50 QAR",
         "sourcingCost": "471.75 QAR",
@@ -5726,7 +5726,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3120",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Feb 01, 2026 - Feb 07, 2026",
         "grossCodCollected": "1226.40 QAR",
         "sourcingCost": "496.40 QAR",
@@ -5740,7 +5740,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3118",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jan 25, 2026 - Jan 31, 2026",
         "grossCodCollected": "1287.30 QAR",
         "sourcingCost": "521.05 QAR",
@@ -5754,7 +5754,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3116",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jan 18, 2026 - Jan 24, 2026",
         "grossCodCollected": "1348.20 QAR",
         "sourcingCost": "545.70 QAR",
@@ -5768,7 +5768,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3114",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jan 11, 2026 - Jan 17, 2026",
         "grossCodCollected": "1409.10 QAR",
         "sourcingCost": "570.35 QAR",
@@ -5782,7 +5782,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3112",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Jan 04, 2026 - Jan 10, 2026",
         "grossCodCollected": "525.00 QAR",
         "sourcingCost": "212.50 QAR",
@@ -5796,7 +5796,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3110",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Dec 28, 2025 - Jan 03, 2026",
         "grossCodCollected": "585.90 QAR",
         "sourcingCost": "237.15 QAR",
@@ -5810,7 +5810,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3108",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Dec 21, 2025 - Dec 27, 2025",
         "grossCodCollected": "646.80 QAR",
         "sourcingCost": "261.80 QAR",
@@ -5824,7 +5824,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3106",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Dec 14, 2025 - Dec 20, 2025",
         "grossCodCollected": "707.70 QAR",
         "sourcingCost": "286.45 QAR",
@@ -5838,7 +5838,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3104",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Dec 07, 2025 - Dec 13, 2025",
         "grossCodCollected": "768.60 QAR",
         "sourcingCost": "311.10 QAR",
@@ -5852,7 +5852,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3102",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Nov 30, 2025 - Dec 06, 2025",
         "grossCodCollected": "829.50 QAR",
         "sourcingCost": "335.75 QAR",
@@ -5866,7 +5866,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3100",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Nov 23, 2025 - Nov 29, 2025",
         "grossCodCollected": "890.40 QAR",
         "sourcingCost": "360.40 QAR",
@@ -5880,7 +5880,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3098",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Nov 16, 2025 - Nov 22, 2025",
         "grossCodCollected": "951.30 QAR",
         "sourcingCost": "385.05 QAR",
@@ -5894,7 +5894,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3096",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Nov 09, 2025 - Nov 15, 2025",
         "grossCodCollected": "1012.20 QAR",
         "sourcingCost": "409.70 QAR",
@@ -5908,7 +5908,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3094",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Nov 02, 2025 - Nov 08, 2025",
         "grossCodCollected": "1073.10 QAR",
         "sourcingCost": "434.35 QAR",
@@ -5922,7 +5922,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3092",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 26, 2025 - Nov 01, 2025",
         "grossCodCollected": "1134.00 QAR",
         "sourcingCost": "459.00 QAR",
@@ -5936,7 +5936,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3090",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 19, 2025 - Oct 25, 2025",
         "grossCodCollected": "1194.90 QAR",
         "sourcingCost": "483.65 QAR",
@@ -5950,7 +5950,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3088",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 12, 2025 - Oct 18, 2025",
         "grossCodCollected": "1255.80 QAR",
         "sourcingCost": "508.30 QAR",
@@ -5964,7 +5964,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3086",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Oct 05, 2025 - Oct 11, 2025",
         "grossCodCollected": "1316.70 QAR",
         "sourcingCost": "532.95 QAR",
@@ -5978,7 +5978,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3084",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 28, 2025 - Oct 04, 2025",
         "grossCodCollected": "1377.60 QAR",
         "sourcingCost": "557.60 QAR",
@@ -5992,7 +5992,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3082",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 21, 2025 - Sep 27, 2025",
         "grossCodCollected": "1438.50 QAR",
         "sourcingCost": "582.25 QAR",
@@ -6006,7 +6006,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3080",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 14, 2025 - Sep 20, 2025",
         "grossCodCollected": "554.40 QAR",
         "sourcingCost": "224.40 QAR",
@@ -6020,7 +6020,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3078",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Sep 07, 2025 - Sep 13, 2025",
         "grossCodCollected": "615.30 QAR",
         "sourcingCost": "249.05 QAR",
@@ -6034,7 +6034,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3076",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 31, 2025 - Sep 06, 2025",
         "grossCodCollected": "676.20 QAR",
         "sourcingCost": "273.70 QAR",
@@ -6048,7 +6048,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3074",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 24, 2025 - Aug 30, 2025",
         "grossCodCollected": "737.10 QAR",
         "sourcingCost": "298.35 QAR",
@@ -6062,7 +6062,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-3072",
         "storeId": "qatar_store",
-        "storeName": "Doha Elite Mart (WooCommerce)",
+        "storeName": "Doha Elite",
         "billingPeriod": "Aug 17, 2025 - Aug 23, 2025",
         "grossCodCollected": "798.00 QAR",
         "sourcingCost": "323.00 QAR",
@@ -6084,7 +6084,7 @@ export const USERS = [
     "market": "Kuwait",
     "currency": "KWD",
     "balance": "3,450.00 KWD",
-    "storeName": "Kuwait Direct Hub (Custom API)",
+    "storeName": "Kuwait Direct",
     "storeId": "kuwait_hub",
     "phone": "+965 99 876 543",
     "bankTitle": "Abdullah Al-Sabah Gen. Trading",
@@ -7141,7 +7141,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4200",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Nov 08, 2026 - Nov 14, 2026",
         "grossCodCollected": "375.90 KWD",
         "sourcingCost": "152.15 KWD",
@@ -7155,7 +7155,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4198",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Nov 01, 2026 - Nov 07, 2026",
         "grossCodCollected": "411.60 KWD",
         "sourcingCost": "166.60 KWD",
@@ -7169,7 +7169,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4196",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 25, 2026 - Oct 31, 2026",
         "grossCodCollected": "447.30 KWD",
         "sourcingCost": "181.05 KWD",
@@ -7183,7 +7183,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4194",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 18, 2026 - Oct 24, 2026",
         "grossCodCollected": "483.00 KWD",
         "sourcingCost": "195.50 KWD",
@@ -7197,7 +7197,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4192",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 11, 2026 - Oct 17, 2026",
         "grossCodCollected": "518.70 KWD",
         "sourcingCost": "209.95 KWD",
@@ -7211,7 +7211,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4190",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 04, 2026 - Oct 10, 2026",
         "grossCodCollected": "554.40 KWD",
         "sourcingCost": "224.40 KWD",
@@ -7225,7 +7225,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4188",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 27, 2026 - Oct 03, 2026",
         "grossCodCollected": "590.10 KWD",
         "sourcingCost": "238.85 KWD",
@@ -7239,7 +7239,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4186",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 20, 2026 - Sep 26, 2026",
         "grossCodCollected": "247.80 KWD",
         "sourcingCost": "100.30 KWD",
@@ -7253,7 +7253,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4184",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 13, 2026 - Sep 19, 2026",
         "grossCodCollected": "283.50 KWD",
         "sourcingCost": "114.75 KWD",
@@ -7267,7 +7267,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4182",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 06, 2026 - Sep 12, 2026",
         "grossCodCollected": "319.20 KWD",
         "sourcingCost": "129.20 KWD",
@@ -7281,7 +7281,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4180",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 30, 2026 - Sep 05, 2026",
         "grossCodCollected": "354.90 KWD",
         "sourcingCost": "143.65 KWD",
@@ -7295,7 +7295,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4178",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 23, 2026 - Aug 29, 2026",
         "grossCodCollected": "390.60 KWD",
         "sourcingCost": "158.10 KWD",
@@ -7309,7 +7309,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4176",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 16, 2026 - Aug 22, 2026",
         "grossCodCollected": "426.30 KWD",
         "sourcingCost": "172.55 KWD",
@@ -7323,7 +7323,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4174",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 09, 2026 - Aug 15, 2026",
         "grossCodCollected": "462.00 KWD",
         "sourcingCost": "187.00 KWD",
@@ -7337,7 +7337,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4172",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 02, 2026 - Aug 08, 2026",
         "grossCodCollected": "497.70 KWD",
         "sourcingCost": "201.45 KWD",
@@ -7351,7 +7351,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4170",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jul 26, 2026 - Aug 01, 2026",
         "grossCodCollected": "533.40 KWD",
         "sourcingCost": "215.90 KWD",
@@ -7365,7 +7365,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4168",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jul 19, 2026 - Jul 25, 2026",
         "grossCodCollected": "569.10 KWD",
         "sourcingCost": "230.35 KWD",
@@ -7379,7 +7379,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4166",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jul 12, 2026 - Jul 18, 2026",
         "grossCodCollected": "604.80 KWD",
         "sourcingCost": "244.80 KWD",
@@ -7393,7 +7393,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4164",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jul 05, 2026 - Jul 11, 2026",
         "grossCodCollected": "262.50 KWD",
         "sourcingCost": "106.25 KWD",
@@ -7407,7 +7407,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4162",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jun 28, 2026 - Jul 04, 2026",
         "grossCodCollected": "298.20 KWD",
         "sourcingCost": "120.70 KWD",
@@ -7421,7 +7421,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4160",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jun 21, 2026 - Jun 27, 2026",
         "grossCodCollected": "333.90 KWD",
         "sourcingCost": "135.15 KWD",
@@ -7435,7 +7435,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4158",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jun 14, 2026 - Jun 20, 2026",
         "grossCodCollected": "369.60 KWD",
         "sourcingCost": "149.60 KWD",
@@ -7449,7 +7449,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4156",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jun 07, 2026 - Jun 13, 2026",
         "grossCodCollected": "405.30 KWD",
         "sourcingCost": "164.05 KWD",
@@ -7463,7 +7463,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4154",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "May 31, 2026 - Jun 06, 2026",
         "grossCodCollected": "441.00 KWD",
         "sourcingCost": "178.50 KWD",
@@ -7477,7 +7477,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4152",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "May 24, 2026 - May 30, 2026",
         "grossCodCollected": "476.70 KWD",
         "sourcingCost": "192.95 KWD",
@@ -7491,7 +7491,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4150",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "May 17, 2026 - May 23, 2026",
         "grossCodCollected": "512.40 KWD",
         "sourcingCost": "207.40 KWD",
@@ -7505,7 +7505,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4148",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "May 10, 2026 - May 16, 2026",
         "grossCodCollected": "548.10 KWD",
         "sourcingCost": "221.85 KWD",
@@ -7519,7 +7519,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4146",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "May 03, 2026 - May 09, 2026",
         "grossCodCollected": "583.80 KWD",
         "sourcingCost": "236.30 KWD",
@@ -7533,7 +7533,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4144",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Apr 26, 2026 - May 02, 2026",
         "grossCodCollected": "241.50 KWD",
         "sourcingCost": "97.75 KWD",
@@ -7547,7 +7547,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4142",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Apr 19, 2026 - Apr 25, 2026",
         "grossCodCollected": "277.20 KWD",
         "sourcingCost": "112.20 KWD",
@@ -7561,7 +7561,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4140",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Apr 12, 2026 - Apr 18, 2026",
         "grossCodCollected": "312.90 KWD",
         "sourcingCost": "126.65 KWD",
@@ -7575,7 +7575,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4138",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Apr 05, 2026 - Apr 11, 2026",
         "grossCodCollected": "348.60 KWD",
         "sourcingCost": "141.10 KWD",
@@ -7589,7 +7589,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4136",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Mar 29, 2026 - Apr 04, 2026",
         "grossCodCollected": "384.30 KWD",
         "sourcingCost": "155.55 KWD",
@@ -7603,7 +7603,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4134",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Mar 22, 2026 - Mar 28, 2026",
         "grossCodCollected": "420.00 KWD",
         "sourcingCost": "170.00 KWD",
@@ -7617,7 +7617,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4132",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Mar 15, 2026 - Mar 21, 2026",
         "grossCodCollected": "455.70 KWD",
         "sourcingCost": "184.45 KWD",
@@ -7631,7 +7631,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4130",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Mar 08, 2026 - Mar 14, 2026",
         "grossCodCollected": "491.40 KWD",
         "sourcingCost": "198.90 KWD",
@@ -7645,7 +7645,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4128",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Mar 01, 2026 - Mar 07, 2026",
         "grossCodCollected": "527.10 KWD",
         "sourcingCost": "213.35 KWD",
@@ -7659,7 +7659,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4126",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Feb 22, 2026 - Feb 28, 2026",
         "grossCodCollected": "562.80 KWD",
         "sourcingCost": "227.80 KWD",
@@ -7673,7 +7673,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4124",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Feb 15, 2026 - Feb 21, 2026",
         "grossCodCollected": "598.50 KWD",
         "sourcingCost": "242.25 KWD",
@@ -7687,7 +7687,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4122",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Feb 08, 2026 - Feb 14, 2026",
         "grossCodCollected": "256.20 KWD",
         "sourcingCost": "103.70 KWD",
@@ -7701,7 +7701,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4120",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Feb 01, 2026 - Feb 07, 2026",
         "grossCodCollected": "291.90 KWD",
         "sourcingCost": "118.15 KWD",
@@ -7715,7 +7715,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4118",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jan 25, 2026 - Jan 31, 2026",
         "grossCodCollected": "327.60 KWD",
         "sourcingCost": "132.60 KWD",
@@ -7729,7 +7729,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4116",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jan 18, 2026 - Jan 24, 2026",
         "grossCodCollected": "363.30 KWD",
         "sourcingCost": "147.05 KWD",
@@ -7743,7 +7743,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4114",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jan 11, 2026 - Jan 17, 2026",
         "grossCodCollected": "399.00 KWD",
         "sourcingCost": "161.50 KWD",
@@ -7757,7 +7757,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4112",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Jan 04, 2026 - Jan 10, 2026",
         "grossCodCollected": "434.70 KWD",
         "sourcingCost": "175.95 KWD",
@@ -7771,7 +7771,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4110",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Dec 28, 2025 - Jan 03, 2026",
         "grossCodCollected": "470.40 KWD",
         "sourcingCost": "190.40 KWD",
@@ -7785,7 +7785,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4108",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Dec 21, 2025 - Dec 27, 2025",
         "grossCodCollected": "506.10 KWD",
         "sourcingCost": "204.85 KWD",
@@ -7799,7 +7799,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4106",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Dec 14, 2025 - Dec 20, 2025",
         "grossCodCollected": "541.80 KWD",
         "sourcingCost": "219.30 KWD",
@@ -7813,7 +7813,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4104",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Dec 07, 2025 - Dec 13, 2025",
         "grossCodCollected": "577.50 KWD",
         "sourcingCost": "233.75 KWD",
@@ -7827,7 +7827,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4102",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Nov 30, 2025 - Dec 06, 2025",
         "grossCodCollected": "235.20 KWD",
         "sourcingCost": "95.20 KWD",
@@ -7841,7 +7841,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4100",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Nov 23, 2025 - Nov 29, 2025",
         "grossCodCollected": "270.90 KWD",
         "sourcingCost": "109.65 KWD",
@@ -7855,7 +7855,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4098",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Nov 16, 2025 - Nov 22, 2025",
         "grossCodCollected": "306.60 KWD",
         "sourcingCost": "124.10 KWD",
@@ -7869,7 +7869,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4096",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Nov 09, 2025 - Nov 15, 2025",
         "grossCodCollected": "342.30 KWD",
         "sourcingCost": "138.55 KWD",
@@ -7883,7 +7883,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4094",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Nov 02, 2025 - Nov 08, 2025",
         "grossCodCollected": "378.00 KWD",
         "sourcingCost": "153.00 KWD",
@@ -7897,7 +7897,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4092",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 26, 2025 - Nov 01, 2025",
         "grossCodCollected": "413.70 KWD",
         "sourcingCost": "167.45 KWD",
@@ -7911,7 +7911,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4090",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 19, 2025 - Oct 25, 2025",
         "grossCodCollected": "449.40 KWD",
         "sourcingCost": "181.90 KWD",
@@ -7925,7 +7925,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4088",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 12, 2025 - Oct 18, 2025",
         "grossCodCollected": "485.10 KWD",
         "sourcingCost": "196.35 KWD",
@@ -7939,7 +7939,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4086",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Oct 05, 2025 - Oct 11, 2025",
         "grossCodCollected": "520.80 KWD",
         "sourcingCost": "210.80 KWD",
@@ -7953,7 +7953,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4084",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 28, 2025 - Oct 04, 2025",
         "grossCodCollected": "556.50 KWD",
         "sourcingCost": "225.25 KWD",
@@ -7967,7 +7967,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4082",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 21, 2025 - Sep 27, 2025",
         "grossCodCollected": "592.20 KWD",
         "sourcingCost": "239.70 KWD",
@@ -7981,7 +7981,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4080",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 14, 2025 - Sep 20, 2025",
         "grossCodCollected": "249.90 KWD",
         "sourcingCost": "101.15 KWD",
@@ -7995,7 +7995,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4078",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Sep 07, 2025 - Sep 13, 2025",
         "grossCodCollected": "285.60 KWD",
         "sourcingCost": "115.60 KWD",
@@ -8009,7 +8009,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4076",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 31, 2025 - Sep 06, 2025",
         "grossCodCollected": "321.30 KWD",
         "sourcingCost": "130.05 KWD",
@@ -8023,7 +8023,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4074",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 24, 2025 - Aug 30, 2025",
         "grossCodCollected": "357.00 KWD",
         "sourcingCost": "144.50 KWD",
@@ -8037,7 +8037,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-4072",
         "storeId": "kuwait_hub",
-        "storeName": "Kuwait Direct Hub (Custom API)",
+        "storeName": "Kuwait Direct",
         "billingPeriod": "Aug 17, 2025 - Aug 23, 2025",
         "grossCodCollected": "392.70 KWD",
         "sourcingCost": "158.95 KWD",
