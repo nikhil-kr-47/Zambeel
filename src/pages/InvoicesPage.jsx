@@ -32,7 +32,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 284",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-13",
         billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
         grossCod: "AED 489",
@@ -46,7 +45,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 312",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-06",
         billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
         grossCod: "AED 524",
@@ -60,7 +58,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 264",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-30",
         billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
         grossCod: "AED 445",
@@ -74,7 +71,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 298",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-23",
         billingPeriod: "Oct 16, 2026 - Oct 22, 2026",
         grossCod: "AED 501",
@@ -88,7 +84,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 345",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-16",
         billingPeriod: "Oct 09, 2026 - Oct 15, 2026",
         grossCod: "AED 582",
@@ -102,7 +97,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 271",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-09",
         billingPeriod: "Oct 02, 2026 - Oct 08, 2026",
         grossCod: "AED 458",
@@ -116,7 +110,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 329",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-02",
         billingPeriod: "Sep 25, 2026 - Oct 01, 2026",
         grossCod: "AED 549",
@@ -130,7 +123,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "EmirFlow",
         payout: "AED 256",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-09-25",
         billingPeriod: "Sep 18, 2026 - Sep 24, 2026",
         grossCod: "AED 432",
@@ -146,7 +138,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Riyadh Prime",
         payout: "SAR 295",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-13",
         billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
         grossCod: "SAR 510",
@@ -160,7 +151,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Riyadh Prime",
         payout: "SAR 340",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-06",
         billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
         grossCod: "SAR 580",
@@ -174,7 +164,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Riyadh Prime",
         payout: "SAR 280",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-30",
         billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
         grossCod: "SAR 485",
@@ -188,7 +177,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Riyadh Prime",
         payout: "SAR 315",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-23",
         billingPeriod: "Oct 16, 2026 - Oct 22, 2026",
         grossCod: "SAR 535",
@@ -204,7 +192,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Doha Elite",
         payout: "QAR 275",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-13",
         billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
         grossCod: "QAR 470",
@@ -218,7 +205,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Doha Elite",
         payout: "QAR 320",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-06",
         billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
         grossCod: "QAR 545",
@@ -232,7 +218,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Doha Elite",
         payout: "QAR 290",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-30",
         billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
         grossCod: "QAR 495",
@@ -248,7 +233,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Kuwait Direct",
         payout: "KWD 195",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-13",
         billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
         grossCod: "KWD 335",
@@ -262,7 +246,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Kuwait Direct",
         payout: "KWD 215",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-11-06",
         billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
         grossCod: "KWD 370",
@@ -276,7 +259,6 @@ export default function InvoicesPage({ currentUser }) {
         storeName: "Kuwait Direct",
         payout: "KWD 180",
         paymentStatus: "N/A",
-        paymentReason: "N/A",
         dateOfInvoice: "2026-10-30",
         billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
         grossCod: "KWD 310",
@@ -285,14 +267,6 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 29
       }
     ]
-  };
-
-  // Convert raw currentUser invoices into strictly 3-digit payout records
-  const extract3DigitPayout = (str, curr = 'AED') => {
-    if (!str) return `${curr} 284`;
-    const digits = str.replace(/[^0-9]/g, '');
-    const threeDigits = digits.slice(0, 3) || '284';
-    return `${curr} ${threeDigits}`;
   };
 
   const currentStoreList = STORE_INVOICES[selectedStore] || STORE_INVOICES['EmirFlow'];
@@ -319,7 +293,6 @@ export default function InvoicesPage({ currentUser }) {
       `Product Sourcing Cost: ${invoice.sourcingCost}\n` +
       `Zambeel Delivery Fee: ${invoice.deliveryFee}\n` +
       `Payment Status: ${invoice.paymentStatus}\n` +
-      `Payment Reason: ${invoice.paymentReason}\n` +
       `--------------------------------------------------\n` +
       `Generated by Zambeel Portal (portal.myzambeel.com)\n`;
     
@@ -380,21 +353,20 @@ export default function InvoicesPage({ currentUser }) {
           </div>
         </div>
 
-        {/* Invoices Table: Non-scrollable with fixed widths fitting 100% */}
-        <div className="w-full rounded-xl border border-gray-100 overflow-hidden mt-4">
-          <table className="w-full table-fixed text-left text-xs sm:text-sm border-collapse">
+        {/* Invoices Table: Clean, spacious 6-column layout with no overlap */}
+        <div className="overflow-x-auto rounded-xl border border-gray-100 mt-4">
+          <table className="min-w-full divide-y divide-gray-100 text-left text-xs sm:text-sm border-collapse">
             
             {/* Thead with soft light blue background */}
             <thead className="bg-[#f0f6ff] text-[#1e293b] font-medium text-xs sm:text-sm">
               <tr>
-                <th className="w-[32%] py-3.5 px-3 sm:px-4 font-semibold">Invoice Name</th>
-                <th className="w-[15%] py-3.5 px-3 sm:px-4 font-semibold">Store Name</th>
+                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Invoice Name</th>
+                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Store Name</th>
                 {/* Payout column strictly 3-digits */}
-                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Payout</th>
-                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Payment Status</th>
-                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Payment Reason</th>
-                <th className="w-[11%] py-3.5 px-3 sm:px-4 font-semibold whitespace-nowrap">Date of Invoice</th>
-                <th className="w-[9%] py-3.5 px-2 sm:px-3 font-semibold text-right sm:text-left whitespace-nowrap">Download</th>
+                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Payout</th>
+                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Payment Status</th>
+                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Date of Invoice</th>
+                <th className="py-3.5 px-4 font-semibold whitespace-nowrap text-right sm:text-left">Download</th>
               </tr>
             </thead>
 
@@ -402,7 +374,7 @@ export default function InvoicesPage({ currentUser }) {
             <tbody className="divide-y divide-gray-100">
               {paginatedInvoices.length === 0 ? (
                 <tr>
-                  <td colSpan={7} className="py-12 text-center text-gray-400">
+                  <td colSpan={6} className="py-12 text-center text-gray-400">
                     No invoices found for {selectedStore}
                   </td>
                 </tr>
@@ -410,10 +382,10 @@ export default function InvoicesPage({ currentUser }) {
                 paginatedInvoices.map((inv) => (
                   <tr key={inv.id} className="hover:bg-gray-50/50 transition-colors">
                     
-                    {/* Invoice Name: compact and truncated, never stretching table */}
-                    <td className="py-3.5 px-3 sm:px-4">
+                    {/* Invoice Name: clean, comfortably readable without blowing width */}
+                    <td className="py-4 px-4 font-mono text-xs text-gray-700 whitespace-nowrap">
                       <span 
-                        className="font-mono text-[11px] sm:text-xs text-gray-700 truncate block max-w-full"
+                        className="inline-block max-w-[280px] sm:max-w-[340px] truncate align-middle"
                         title={inv.invoiceName}
                       >
                         {inv.invoiceName}
@@ -421,38 +393,31 @@ export default function InvoicesPage({ currentUser }) {
                     </td>
 
                     {/* Store Name */}
-                    <td className="py-3.5 px-3 sm:px-4 text-gray-700 font-medium">
-                      <span className="truncate block max-w-full" title={inv.storeName}>
-                        {inv.storeName}
-                      </span>
+                    <td className="py-4 px-4 text-gray-700 whitespace-nowrap font-medium">
+                      {inv.storeName}
                     </td>
 
                     {/* Payout: Strictly 3 digits */}
-                    <td className="py-3.5 px-3 sm:px-4 whitespace-nowrap font-semibold text-gray-900">
+                    <td className="py-4 px-4 whitespace-nowrap font-semibold text-gray-900">
                       {inv.payout}
                     </td>
 
                     {/* Payment Status (N/A) */}
-                    <td className="py-3.5 px-3 sm:px-4 text-gray-400 italic whitespace-nowrap">
+                    <td className="py-4 px-4 text-gray-400 italic whitespace-nowrap">
                       {inv.paymentStatus}
                     </td>
 
-                    {/* Payment Reason (N/A) */}
-                    <td className="py-3.5 px-3 sm:px-4 text-gray-400 italic whitespace-nowrap">
-                      {inv.paymentReason}
-                    </td>
-
                     {/* Date of Invoice */}
-                    <td className="py-3.5 px-3 sm:px-4 text-gray-700 whitespace-nowrap">
+                    <td className="py-4 px-4 text-gray-700 whitespace-nowrap">
                       {inv.dateOfInvoice}
                     </td>
 
                     {/* Download Button */}
-                    <td className="py-3.5 px-2 sm:px-3 whitespace-nowrap text-right sm:text-left">
-                      <div className="flex items-center gap-1.5">
+                    <td className="py-4 px-4 whitespace-nowrap text-right sm:text-left">
+                      <div className="flex items-center gap-2">
                         <button
                           onClick={() => handleDownload(inv)}
-                          className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-[#f0f6ff] hover:bg-blue-100 text-[#2563eb] text-xs font-semibold rounded-lg border border-blue-100 transition-colors cursor-pointer shadow-2xs"
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#f0f6ff] hover:bg-blue-100 text-[#2563eb] text-xs font-semibold rounded-lg border border-blue-100 transition-colors cursor-pointer shadow-2xs"
                         >
                           <Download className="w-3.5 h-3.5 text-[#2563eb]" />
                           <span>Download</span>
