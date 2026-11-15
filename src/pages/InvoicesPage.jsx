@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   ChevronDown, 
   ChevronLeft,
@@ -8,6 +8,64 @@ import {
   X,
   FileText
 } from 'lucide-react';
+
+// Deterministic hash generator for authentic Zambeel invoice filenames
+function generateInvoiceHash(seed) {
+  const chars = "abcdef0123456789";
+  let hash = "";
+  for (let i = 0; i < 32; i++) {
+    const code = (seed * 9301 + 49297 + i * 233) % 233280;
+    hash += chars[code % 16];
+    if (i === 7 || i === 11 || i === 15 || i === 19) hash += "-";
+  }
+  return hash;
+}
+
+// Generate 100 authentic invoices per store (3-digit payouts, line-breaking filenames)
+function generateStoreInvoices(storeName, storeSlug, currency, count = 100) {
+  const baseDate = new Date(2026, 10, 13); // Nov 13, 2026
+  const list = [];
+
+  for (let i = 0; i < count; i++) {
+    const invDate = new Date(baseDate.getTime() - i * 7 * 86400000);
+    const dateStr = invDate.toISOString().split("T")[0];
+    
+    const prevDate = new Date(invDate.getTime() - 6 * 86400000);
+    const startMonth = prevDate.toLocaleString('en-US', { month: 'short' });
+    const endMonth = invDate.toLocaleString('en-US', { month: 'short' });
+    const startDay = String(prevDate.getDate()).padStart(2, '0');
+    const endDay = String(invDate.getDate()).padStart(2, '0');
+    const year = invDate.getFullYear();
+    const billingPeriod = `${startMonth} ${startDay}, ${year} - ${endMonth} ${endDay}, ${year}`;
+
+    // Strictly 3-digit payout (200 - 379)
+    const payoutNum = 200 + ((i * 37 + 84) % 180);
+    const grossNum = 420 + ((i * 43 + 69) % 200);
+    const sourcingNum = 130 + ((i * 19 + 22) % 60);
+    const deliveryNum = 40 + ((i * 11 + 13) % 20);
+    const ordersCount = 28 + (i % 22);
+
+    const invoiceNumber = 81899 - i;
+    const hash = generateInvoiceHash(i + (storeSlug.length * 17));
+    const invoiceName = `33792-${invoiceNumber}-${storeSlug}_${hash}.pdf`;
+
+    list.push({
+      id: invoiceName,
+      invoiceName,
+      storeName,
+      payout: `${currency} ${payoutNum}`,
+      paymentStatus: "N/A",
+      dateOfInvoice: dateStr,
+      billingPeriod,
+      grossCod: `${currency} ${grossNum}`,
+      sourcingCost: `${currency} ${sourcingNum}`,
+      deliveryFee: `${currency} ${deliveryNum}`,
+      ordersCount
+    });
+  }
+
+  return list;
+}
 
 export default function InvoicesPage({ currentUser }) {
   // 4 Unique Store Names across all 4 accounts (No EmirFlow)
@@ -23,262 +81,38 @@ export default function InvoicesPage({ currentUser }) {
     }
   }, [currentUser]);
 
-  // Unique invoice datasets for each of the 4 accounts (3-digit payouts, unique store names)
-  const STORE_INVOICES = {
-    'Dubai Trends': [
-      {
-        id: "33792-81899-dubaitrends_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
-        invoiceName: "33792-81899-dubaitrends_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 284",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-13",
-        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
-        grossCod: "AED 489",
-        sourcingCost: "AED 152",
-        deliveryFee: "AED 53",
-        ordersCount: 38
-      },
-      {
-        id: "33792-81885-dubaitrends_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
-        invoiceName: "33792-81885-dubaitrends_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 312",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-06",
-        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
-        grossCod: "AED 524",
-        sourcingCost: "AED 161",
-        deliveryFee: "AED 51",
-        ordersCount: 42
-      },
-      {
-        id: "33792-81872-dubaitrends_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
-        invoiceName: "33792-81872-dubaitrends_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 264",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-30",
-        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
-        grossCod: "AED 445",
-        sourcingCost: "AED 139",
-        deliveryFee: "AED 42",
-        ordersCount: 35
-      },
-      {
-        id: "33792-81860-dubaitrends_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
-        invoiceName: "33792-81860-dubaitrends_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 298",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-23",
-        billingPeriod: "Oct 16, 2026 - Oct 22, 2026",
-        grossCod: "AED 501",
-        sourcingCost: "AED 156",
-        deliveryFee: "AED 47",
-        ordersCount: 39
-      },
-      {
-        id: "33792-81848-dubaitrends_d40b891c-4209-4790-a692-a76bb513f78.pdf",
-        invoiceName: "33792-81848-dubaitrends_d40b891c-4209-4790-a692-a76bb513f78.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 345",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-16",
-        billingPeriod: "Oct 09, 2026 - Oct 15, 2026",
-        grossCod: "AED 582",
-        sourcingCost: "AED 179",
-        deliveryFee: "AED 58",
-        ordersCount: 46
-      },
-      {
-        id: "33792-81835-dubaitrends_a39c780b-3198-468f-9581-965aa402e67.pdf",
-        invoiceName: "33792-81835-dubaitrends_a39c780b-3198-468f-9581-965aa402e67.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 271",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-09",
-        billingPeriod: "Oct 02, 2026 - Oct 08, 2026",
-        grossCod: "AED 458",
-        sourcingCost: "AED 142",
-        deliveryFee: "AED 45",
-        ordersCount: 36
-      },
-      {
-        id: "33792-81822-dubaitrends_928b679a-2087-457e-8470-854993f1d56.pdf",
-        invoiceName: "33792-81822-dubaitrends_928b679a-2087-457e-8470-854993f1d56.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 329",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-02",
-        billingPeriod: "Sep 25, 2026 - Oct 01, 2026",
-        grossCod: "AED 549",
-        sourcingCost: "AED 168",
-        deliveryFee: "AED 52",
-        ordersCount: 43
-      },
-      {
-        id: "33792-81810-dubaitrends_817a5689-1976-446d-736f-743882e0c45.pdf",
-        invoiceName: "33792-81810-dubaitrends_817a5689-1976-446d-736f-743882e0c45.pdf",
-        storeName: "Dubai Trends",
-        payout: "AED 256",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-09-25",
-        billingPeriod: "Sep 18, 2026 - Sep 24, 2026",
-        grossCod: "AED 432",
-        sourcingCost: "AED 135",
-        deliveryFee: "AED 41",
-        ordersCount: 33
-      }
-    ],
-    'Riyadh Prime': [
-      {
-        id: "41285-92014-riyadhprime_a71b294e-1284-48d1-9310-f94cb831a22.pdf",
-        invoiceName: "41285-92014-riyadhprime_a71b294e-1284-48d1-9310-f94cb831a22.pdf",
-        storeName: "Riyadh Prime",
-        payout: "SAR 295",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-13",
-        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
-        grossCod: "SAR 510",
-        sourcingCost: "SAR 160",
-        deliveryFee: "SAR 55",
-        ordersCount: 40
-      },
-      {
-        id: "41285-92002-riyadhprime_f62a183d-9173-47c0-8209-e83ba720b11.pdf",
-        invoiceName: "41285-92002-riyadhprime_f62a183d-9173-47c0-8209-e83ba720b11.pdf",
-        storeName: "Riyadh Prime",
-        payout: "SAR 340",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-06",
-        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
-        grossCod: "SAR 580",
-        sourcingCost: "SAR 182",
-        deliveryFee: "SAR 58",
-        ordersCount: 45
-      },
-      {
-        id: "41285-91990-riyadhprime_e51f072c-8062-46b9-7198-d72a9619c00.pdf",
-        invoiceName: "41285-91990-riyadhprime_e51f072c-8062-46b9-7198-d72a9619c00.pdf",
-        storeName: "Riyadh Prime",
-        payout: "SAR 280",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-30",
-        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
-        grossCod: "SAR 485",
-        sourcingCost: "SAR 155",
-        deliveryFee: "SAR 50",
-        ordersCount: 37
-      },
-      {
-        id: "41285-91978-riyadhprime_d40e961b-7951-45a8-6087-c6198508d99.pdf",
-        invoiceName: "41285-91978-riyadhprime_d40e961b-7951-45a8-6087-c6198508d99.pdf",
-        storeName: "Riyadh Prime",
-        payout: "SAR 315",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-23",
-        billingPeriod: "Oct 16, 2026 - Oct 22, 2026",
-        grossCod: "SAR 535",
-        sourcingCost: "SAR 168",
-        deliveryFee: "SAR 52",
-        ordersCount: 41
-      }
-    ],
-    'Doha Elite': [
-      {
-        id: "52391-73125-dohaelite_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
-        invoiceName: "52391-73125-dohaelite_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
-        storeName: "Doha Elite",
-        payout: "QAR 275",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-13",
-        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
-        grossCod: "QAR 470",
-        sourcingCost: "QAR 148",
-        deliveryFee: "QAR 47",
-        ordersCount: 36
-      },
-      {
-        id: "52391-73112-dohaelite_b71a294e-1284-48d1-7310-994cb831a22.pdf",
-        invoiceName: "52391-73112-dohaelite_b71a294e-1284-48d1-7310-994cb831a22.pdf",
-        storeName: "Doha Elite",
-        payout: "QAR 320",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-06",
-        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
-        grossCod: "QAR 545",
-        sourcingCost: "QAR 172",
-        deliveryFee: "QAR 53",
-        ordersCount: 42
-      },
-      {
-        id: "52391-73099-dohaelite_a60f183d-0173-47c0-6209-883ba720b11.pdf",
-        invoiceName: "52391-73099-dohaelite_a60f183d-0173-47c0-6209-883ba720b11.pdf",
-        storeName: "Doha Elite",
-        payout: "QAR 290",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-30",
-        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
-        grossCod: "QAR 495",
-        sourcingCost: "QAR 156",
-        deliveryFee: "QAR 49",
-        ordersCount: 38
-      }
-    ],
-    'Kuwait Direct': [
-      {
-        id: "63402-84236-kuwaitdirect_d93c416a-3406-40f3-9532-b16ed053c44.pdf",
-        invoiceName: "63402-84236-kuwaitdirect_d93c416a-3406-40f3-9532-b16ed053c44.pdf",
-        storeName: "Kuwait Direct",
-        payout: "KWD 195",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-13",
-        billingPeriod: "Nov 06, 2026 - Nov 12, 2026",
-        grossCod: "KWD 335",
-        sourcingCost: "KWD 105",
-        deliveryFee: "KWD 35",
-        ordersCount: 32
-      },
-      {
-        id: "63402-84224-kuwaitdirect_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
-        invoiceName: "63402-84224-kuwaitdirect_c82b305f-2395-49e2-8421-a05dc942b33.pdf",
-        storeName: "Kuwait Direct",
-        payout: "KWD 215",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-11-06",
-        billingPeriod: "Oct 30, 2026 - Nov 05, 2026",
-        grossCod: "KWD 370",
-        sourcingCost: "KWD 116",
-        deliveryFee: "KWD 39",
-        ordersCount: 35
-      },
-      {
-        id: "63402-84211-kuwaitdirect_b71a294e-1284-48d1-7310-994cb831a22.pdf",
-        invoiceName: "63402-84211-kuwaitdirect_b71a294e-1284-48d1-7310-994cb831a22.pdf",
-        storeName: "Kuwait Direct",
-        payout: "KWD 180",
-        paymentStatus: "N/A",
-        dateOfInvoice: "2026-10-30",
-        billingPeriod: "Oct 23, 2026 - Oct 29, 2026",
-        grossCod: "KWD 310",
-        sourcingCost: "KWD 98",
-        deliveryFee: "KWD 32",
-        ordersCount: 29
-      }
-    ]
-  };
+  // 100+ invoices for each unique store
+  const ALL_STORE_INVOICES = useMemo(() => ({
+    'Dubai Trends': generateStoreInvoices('Dubai Trends', 'dubaitrends', 'AED', 100),
+    'Riyadh Prime': generateStoreInvoices('Riyadh Prime', 'riyadhprime', 'SAR', 100),
+    'Doha Elite': generateStoreInvoices('Doha Elite', 'dohaelite', 'QAR', 100),
+    'Kuwait Direct': generateStoreInvoices('Kuwait Direct', 'kuwaitdirect', 'KWD', 100)
+  }), []);
 
-  const currentStoreList = STORE_INVOICES[selectedStore] || STORE_INVOICES['Dubai Trends'];
+  const currentStoreList = ALL_STORE_INVOICES[selectedStore] || ALL_STORE_INVOICES['Dubai Trends'];
   
-  // Combine all invoices for "All Stores" option
+  // Combine all invoices for "All Stores" option (400 invoices total)
   const allInvoices = selectedStore === 'All Stores'
-    ? Object.values(STORE_INVOICES).flat()
+    ? Object.values(ALL_STORE_INVOICES).flat()
     : currentStoreList;
 
   const totalPages = Math.ceil(allInvoices.length / pageSize) || 1;
   const startIndex = (currentPage - 1) * pageSize;
   const paginatedInvoices = allInvoices.slice(startIndex, startIndex + pageSize);
+
+  // Compact pagination window (up to 5 buttons)
+  const visiblePages = useMemo(() => {
+    if (totalPages <= 5) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    if (currentPage <= 3) {
+      return [1, 2, 3, 4, 5];
+    }
+    if (currentPage >= totalPages - 2) {
+      return [totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+    }
+    return [currentPage - 2, currentPage - 1, currentPage, currentPage + 1, currentPage + 2];
+  }, [totalPages, currentPage]);
 
   const handleDownload = (invoice) => {
     const content = `ZAMBEEL LOGISTICS & DROPSHIPPING PORTAL\n` +
@@ -316,7 +150,7 @@ export default function InvoicesPage({ currentUser }) {
           My Invoices
         </h1>
         <p className="text-purple-100 text-xs sm:text-sm mt-1.5 font-normal">
-          Manage and download your store invoices
+          Manage and download your store invoices ({allInvoices.length} total statements)
         </p>
       </div>
 
@@ -325,9 +159,14 @@ export default function InvoicesPage({ currentUser }) {
         
         {/* Card Header matching Screenshot */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">
-            Invoices
-          </h2>
+          <div className="flex items-center gap-3">
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">
+              Invoices
+            </h2>
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-700 border border-purple-100">
+              {allInvoices.length} invoices
+            </span>
+          </div>
 
           {/* Select Store Dropdown - 4 Unique store names (No EmirFlow) */}
           <div className="flex items-center gap-3">
@@ -346,7 +185,7 @@ export default function InvoicesPage({ currentUser }) {
                 {['Dubai Trends', 'Riyadh Prime', 'Doha Elite', 'Kuwait Direct'].map((st) => (
                   <option key={st} value={st}>{st}</option>
                 ))}
-                <option value="All Stores">All Stores</option>
+                <option value="All Stores">All Stores (400 Invoices)</option>
               </select>
               <ChevronDown className="w-4 h-4 text-gray-500 absolute right-3 top-2.5 pointer-events-none" />
             </div>
@@ -439,7 +278,7 @@ export default function InvoicesPage({ currentUser }) {
         {/* Pagination Footer */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 pt-2">
           
-          {/* Left pagination controls: < [ 1 ] > */}
+          {/* Left pagination controls: < [ 1 ] [ 2 ] ... > */}
           <div className="flex items-center gap-1.5">
             <button
               onClick={() => setCurrentPage(p => Math.max(p - 1, 1))}
@@ -449,7 +288,7 @@ export default function InvoicesPage({ currentUser }) {
               <ChevronLeft className="w-4 h-4" />
             </button>
             
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+            {visiblePages.map((pageNum) => (
               <button
                 key={pageNum}
                 onClick={() => setCurrentPage(pageNum)}
@@ -509,6 +348,10 @@ export default function InvoicesPage({ currentUser }) {
                 <ChevronDown className="w-3.5 h-3.5 text-gray-500 absolute right-1.5 top-2 pointer-events-none" />
               </div>
             </div>
+
+            <span className="text-gray-400 text-xs hidden md:inline">
+              Showing {startIndex + 1} to {Math.min(startIndex + pageSize, allInvoices.length)} of {allInvoices.length}
+            </span>
           </div>
 
         </div>
