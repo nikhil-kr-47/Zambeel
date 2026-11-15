@@ -64,8 +64,11 @@ export default function App() {
 
             {(activePage === 'dashboard' || activePage === 'orders-analytics' || activePage === 'gold-subscription' || activePage === 'bank-accounts') && (
               <DashboardPage 
+                currentUser={currentUser}
                 onNavigateToOrders={() => setActivePage('orders')}
                 onNavigateToInvoices={() => setActivePage('my-invoices')}
+                onNavigateToAnalytics={() => setActivePage('orders-analytics')}
+                onNavigateToBankAccounts={() => setActivePage('bank-accounts')}
               />
             )}
           </main>

@@ -1,176 +1,285 @@
 import React from 'react';
 import { 
-  TrendingUp, 
-  Package, 
-  DollarSign, 
-  Truck, 
-  ArrowUpRight, 
+  Shield, 
   CheckCircle2, 
-  Clock, 
-  AlertTriangle,
   ChevronRight,
-  ShieldCheck,
-  ShoppingBag
+  ExternalLink
 } from 'lucide-react';
 
-export default function DashboardPage({ onNavigateToOrders, onNavigateToInvoices }) {
+export default function DashboardPage({ 
+  currentUser, 
+  onNavigateToOrders, 
+  onNavigateToInvoices,
+  onNavigateToAnalytics,
+  onNavigateToBankAccounts
+}) {
+  // Use user name or authentic fallback from screenshot
+  const userName = currentUser?.name || 'M Bilal N Phansopkar';
+  const totalOrders = currentUser?.orders?.length || 49;
+  const deliveredOrders = currentUser?.orders 
+    ? currentUser.orders.filter(o => o.status === 'Delivered').length 
+    : 13;
+  const deliveredPercent = totalOrders > 0 
+    ? Math.round((deliveredOrders / totalOrders) * 100) 
+    : 27;
+
   return (
-    <div className="space-y-6 max-w-7xl mx-auto pb-12 animate-in fade-in duration-300">
+    <div className="space-y-6 max-w-7xl mx-auto pb-16 animate-in fade-in duration-300">
       
-      {/* Welcome header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-xl md:text-2xl font-bold text-gray-900">
-            Merchant Overview
-          </h1>
-          <p className="text-xs text-gray-500 mt-0.5">
-            Real-time analytics across your 9 Zambeel fulfillment countries
-          </p>
-        </div>
+      {/* 1. TOP PURPLE HERO BANNER (Pixel-Perfect from Screenshot) */}
+      <div className="relative w-full rounded-3xl bg-gradient-to-r from-[#5E2EE8] via-[#6B38F8] to-[#7B46F8] text-white p-6 sm:p-8 overflow-hidden shadow-sm">
+        {/* Soft background glow circles like authentic Zambeel */}
+        <div className="absolute -top-16 -right-16 w-72 h-72 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute -bottom-16 -left-16 w-72 h-72 bg-black/10 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute top-1/2 left-1/3 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="flex items-center gap-2">
-          <button
-            onClick={onNavigateToOrders}
-            className="px-4 py-2 rounded-xl bg-purple-700 hover:bg-purple-800 text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5"
-          >
-            <ShoppingBag className="w-3.5 h-3.5" />
-            <span>Manage Orders</span>
-          </button>
-          <button
-            onClick={onNavigateToInvoices}
-            className="px-4 py-2 rounded-xl bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-xs font-semibold transition-all shadow-xs"
-          >
-            Invoices & Payouts
-          </button>
-        </div>
-      </div>
+        <div className="relative z-10 flex flex-col justify-between gap-6">
+          
+          {/* Header Row: Greeting on Left & Action Buttons on Right */}
+          <div className="flex flex-col md:flex-row md:items-start justify-between gap-5">
+            <div>
+              <h1 className="text-2xl sm:text-3xl md:text-[32px] font-bold tracking-tight text-white mb-1.5 leading-snug">
+                Good Afternoon, {userName}!
+              </h1>
+              <p className="text-xs sm:text-sm text-white/85 font-normal">
+                Welcome back to your seller dashboard
+              </p>
+            </div>
 
-      {/* KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="bg-white rounded-2xl p-5 border border-gray-200/90 shadow-xs">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-gray-500">Gross COD Revenue</span>
-            <span className="p-2 rounded-xl bg-purple-50 text-purple-600">
-              <DollarSign className="w-4 h-4" />
-            </span>
-          </div>
-          <div className="text-2xl font-semibold text-gray-900 mt-2">72,450.00 AED</div>
-          <div className="flex items-center gap-1 text-[11px] text-emerald-600 font-semibold mt-1">
-            <ArrowUpRight className="w-3 h-3" />
-            <span>+14.2% from last cycle</span>
-          </div>
-        </div>
+            {/* Top Right Action Buttons matching Screenshot */}
+            <div className="flex flex-col items-start md:items-end gap-2.5 flex-shrink-0">
+              {/* Yellow/Amber Bank Accounts button */}
+              <button
+                onClick={onNavigateToBankAccounts || onNavigateToInvoices}
+                className="bg-[#F6B72A] hover:bg-[#EAA920] active:scale-98 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-sm transition-all cursor-pointer"
+              >
+                <Shield className="w-4 h-4 stroke-[2.4] text-gray-900" />
+                <span>Official Zambeel Bank Accounts</span>
+              </button>
 
-        <div className="bg-white rounded-2xl p-5 border border-gray-200/90 shadow-xs">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-gray-500">Total Orders Dispatched</span>
-            <span className="p-2 rounded-xl bg-blue-50 text-blue-600">
-              <Package className="w-4 h-4" />
-            </span>
-          </div>
-          <div className="text-2xl font-semibold text-gray-900 mt-2">326 Orders</div>
-          <div className="flex items-center gap-1 text-[11px] text-emerald-600 font-semibold mt-1">
-            <ArrowUpRight className="w-3 h-3" />
-            <span>88.4% COD Delivery Success</span>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl p-5 border border-gray-200/90 shadow-xs">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-gray-500">Net Profit Payout</span>
-            <span className="p-2 rounded-xl bg-emerald-50 text-emerald-600">
-              <TrendingUp className="w-4 h-4" />
-            </span>
-          </div>
-          <div className="text-2xl font-semibold text-emerald-600 mt-2">33,260.00 AED</div>
-          <div className="flex items-center gap-1 text-[11px] text-gray-400 mt-1">
-            <span>Weekly cycle paid every Monday</span>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl p-5 border border-gray-200/90 shadow-xs">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-gray-500">Active Countries</span>
-            <span className="p-2 rounded-xl bg-amber-50 text-amber-600">
-              <Truck className="w-4 h-4" />
-            </span>
-          </div>
-          <div className="text-2xl font-semibold text-gray-900 mt-2">9 / 9 Hubs</div>
-          <div className="flex items-center gap-1 text-[11px] text-purple-600 font-semibold mt-1">
-            <ShieldCheck className="w-3 h-3" />
-            <span>All warehouses operational</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Regional breakdown and Live Updates */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 bg-white rounded-2xl p-6 border border-gray-200/90 shadow-xs space-y-4">
-          <div className="flex items-center justify-between">
-            <h3 className="font-bold text-gray-900 text-sm">Top Performing GCC Destinations</h3>
-            <span className="text-xs text-purple-600 font-semibold">Last 30 Days</span>
-          </div>
-
-          <div className="space-y-3">
-            {[
-              { country: 'Saudi Arabia (KSA)', share: '48%', orders: '156 orders', revenue: '34,800 SAR', color: 'bg-emerald-500' },
-              { country: 'United Arab Emirates (UAE)', share: '32%', orders: '104 orders', revenue: '22,400 AED', color: 'bg-blue-500' },
-              { country: 'Qatar', share: '12%', orders: '39 orders', revenue: '9,850 QAR', color: 'bg-purple-500' },
-              { country: 'Kuwait & Bahrain', share: '8%', orders: '27 orders', revenue: '5,400 USD', color: 'bg-amber-500' },
-            ].map((reg, idx) => (
-              <div key={idx} className="space-y-1.5 text-xs">
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold text-gray-800">{reg.country}</span>
-                  <div className="space-x-3 text-right">
-                    <span className="text-gray-400">{reg.orders}</span>
-                    <span className="font-bold text-gray-900">{reg.revenue}</span>
-                  </div>
-                </div>
-                <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                  <div className={`h-full ${reg.color} rounded-full`} style={{ width: reg.share }} />
-                </div>
+              {/* View Analytics & View Orders buttons */}
+              <div className="flex items-center gap-2.5">
+                <button
+                  onClick={onNavigateToAnalytics || onNavigateToOrders}
+                  className="bg-[#481AB8]/80 hover:bg-[#481AB8] active:scale-98 text-white font-semibold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-xs transition-all cursor-pointer border border-white/10"
+                >
+                  View Analytics
+                </button>
+                <button
+                  onClick={onNavigateToOrders}
+                  className="bg-white hover:bg-gray-100 active:scale-98 text-[#6B38F8] font-bold px-4 py-2 rounded-xl text-xs sm:text-sm shadow-sm transition-all cursor-pointer"
+                >
+                  View Orders
+                </button>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
 
-        {/* Live Support / Account Manager card */}
-        <div className="bg-gradient-to-br from-[#181335] to-[#2B1B54] rounded-2xl p-6 text-white shadow-md flex flex-col justify-between">
+          {/* 4 Bottom Metric Columns inside Hero Card */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 pt-2">
+            
+            {/* 1. Total Stores */}
+            <div className="bg-white/10 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-white/10 flex flex-col justify-between">
+              <span className="text-xs sm:text-sm font-medium text-white/85">
+                Total Stores
+              </span>
+              <div className="mt-1">
+                <span className="text-2xl sm:text-3xl font-extrabold text-white block">
+                  1
+                </span>
+                <span className="text-[11px] text-white/70 block mt-0.5">
+                  (Currently Active)
+                </span>
+              </div>
+            </div>
+
+            {/* 2. Total Orders */}
+            <div className="bg-white/10 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-white/10 flex flex-col justify-between">
+              <span className="text-xs sm:text-sm font-medium text-white/85">
+                Total Orders
+              </span>
+              <div className="mt-1">
+                <span className="text-2xl sm:text-3xl font-extrabold text-white block">
+                  {totalOrders}
+                </span>
+                <span className="text-[11px] text-transparent block mt-0.5 select-none">
+                  &nbsp;
+                </span>
+              </div>
+            </div>
+
+            {/* 3. Delivered Orders */}
+            <div className="bg-white/10 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-white/10 flex flex-col justify-between">
+              <span className="text-xs sm:text-sm font-medium text-white/85">
+                Delivered Orders
+              </span>
+              <div className="mt-1">
+                <span className="text-2xl sm:text-3xl font-extrabold text-white block">
+                  {deliveredOrders}
+                </span>
+                <span className="text-[11px] text-white/70 block mt-0.5">
+                  {deliveredPercent} % of total orders
+                </span>
+              </div>
+            </div>
+
+            {/* 4. Profile Completion */}
+            <div className="bg-white/10 backdrop-blur-xs rounded-2xl p-4 sm:p-5 border border-white/10 flex flex-col justify-between">
+              <span className="text-xs sm:text-sm font-medium text-white/85">
+                Profile Completion
+              </span>
+              <div className="mt-1">
+                <span className="text-2xl sm:text-3xl font-extrabold text-white block">
+                  75%
+                </span>
+                <span className="text-[11px] text-white/70 block mt-0.5">
+                  Complete your profile
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      {/* 2. SECOND SECTION: Complete Your Profile (Left) & Our Products (Right) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        
+        {/* Left Card: Complete your profile (lg:col-span-5) */}
+        <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-7 border border-gray-100 shadow-sm flex flex-col justify-between">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 text-amber-300 text-[10px] font-bold">
-              <span>Dedicated Account Manager</span>
-            </div>
-            <h3 className="text-lg font-bold text-white mt-3">Hamza Al-Sayed</h3>
-            <p className="text-xs text-purple-200 mt-1">Zambeel Senior Merchant Growth Specialist</p>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 tracking-tight">
+              Complete your profile
+            </h2>
 
-            <div className="mt-5 space-y-2 text-xs text-purple-100">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Daily inventory stock check</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span>WhatsApp address confirmation assistance</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Custom product sourcing from China & UAE</span>
+            {/* Progress Bar matching Screenshot */}
+            <div className="w-full bg-[#EAE8F5] rounded-full h-8 p-1 relative flex items-center mb-6 overflow-hidden">
+              <div className="w-[75%] bg-[#6B38F8] h-full rounded-full flex items-center justify-center text-white text-xs sm:text-[13px] font-bold tracking-wide shadow-xs">
+                75% Completed
               </div>
             </div>
-          </div>
 
-          <div className="pt-6">
-            <a
-              href="https://api.whatsapp.com/send?phone=971500000000"
-              target="_blank"
-              rel="noreferrer"
-              className="w-full py-2.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg transition-transform active:scale-95"
-            >
-              <span>Message Account Manager</span>
-            </a>
+            {/* 2x2 Steps Grid matching Screenshot */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-3.5">
+              
+              {/* Step 1: Sign Up */}
+              <div className="bg-white border border-[#DCD3F7] rounded-2xl p-3 sm:p-3.5 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-800 shadow-2xs">
+                <div className="w-5 h-5 rounded-full bg-[#5E2EE8] flex items-center justify-center flex-shrink-0 text-white shadow-2xs">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-white stroke-[3]" />
+                </div>
+                <span className="truncate">Sign Up</span>
+              </div>
+
+              {/* Step 2: Bank Account */}
+              <div className="bg-white border border-[#DCD3F7] rounded-2xl p-3 sm:p-3.5 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-800 shadow-2xs">
+                <div className="w-5 h-5 rounded-full bg-[#5E2EE8] flex items-center justify-center flex-shrink-0 text-white shadow-2xs">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-white stroke-[3]" />
+                </div>
+                <span className="truncate">Bank Account</span>
+              </div>
+
+              {/* Step 3: Store Integrated */}
+              <div className="bg-white border border-[#DCD3F7] rounded-2xl p-3 sm:p-3.5 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-800 shadow-2xs">
+                <div className="w-5 h-5 rounded-full bg-[#5E2EE8] flex items-center justify-center flex-shrink-0 text-white shadow-2xs">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-white stroke-[3]" />
+                </div>
+                <span className="truncate">Store Integrated</span>
+              </div>
+
+              {/* Step 4: Subscription Plan (Pending) */}
+              <div className="bg-white border border-gray-200 rounded-2xl p-3 sm:p-3.5 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-500">
+                <div className="w-5 h-5 rounded-full border-2 border-gray-300 flex-shrink-0" />
+                <span className="truncate">Subscription Plan</span>
+              </div>
+
+            </div>
           </div>
         </div>
+
+        {/* Right Card: Our Products (lg:col-span-7) */}
+        <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-7 border border-gray-100 shadow-sm flex flex-col justify-between">
+          <div>
+            {/* Header: Title & "See All Products" Button */}
+            <div className="flex items-center justify-between gap-4 mb-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">
+                Our Products
+              </h2>
+
+              <button
+                onClick={() => alert('Explore all products in catalog')}
+                className="bg-[#F6B72A] hover:bg-[#EAA920] active:scale-98 text-gray-900 font-bold px-4 py-1.5 rounded-full text-xs sm:text-sm shadow-2xs transition-all cursor-pointer flex items-center gap-1"
+              >
+                <span>See All Products</span>
+              </button>
+            </div>
+
+            {/* 3 Products Grid matching Screenshot */}
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-4">
+              
+              {/* Product 1: Triple Action Eye Cream */}
+              <div className="border border-gray-100 rounded-2xl p-2.5 sm:p-3 flex flex-col justify-between bg-white hover:border-purple-200 hover:shadow-md transition-all group cursor-pointer">
+                <div>
+                  <div className="w-full aspect-[4/5] rounded-xl overflow-hidden bg-[#F8F9FA] flex items-center justify-center p-1 relative mb-2">
+                    <img 
+                      src="/products/eye-cream.jpg" 
+                      alt="Triple Action Eye Cream" 
+                      className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-200"
+                    />
+                  </div>
+                  <h3 className="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2 leading-snug mt-1 min-h-[34px]">
+                    Triple Action Eye Cream
+                  </h3>
+                </div>
+                <div className="text-sm sm:text-base font-extrabold text-gray-900 mt-2">
+                  30.00 <span className="text-xs font-semibold text-gray-600">AED</span>
+                </div>
+              </div>
+
+              {/* Product 2: BioRich - Fat Burner... */}
+              <div className="border border-gray-100 rounded-2xl p-2.5 sm:p-3 flex flex-col justify-between bg-white hover:border-purple-200 hover:shadow-md transition-all group cursor-pointer">
+                <div>
+                  <div className="w-full aspect-[4/5] rounded-xl overflow-hidden bg-[#F8F9FA] flex items-center justify-center p-1 relative mb-2">
+                    <img 
+                      src="/products/fat-burner.jpg" 
+                      alt="BioRich - Fat Burner" 
+                      className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-200"
+                    />
+                  </div>
+                  <h3 className="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2 leading-snug mt-1 min-h-[34px]">
+                    BioRich - Fat Burner...
+                  </h3>
+                </div>
+                <div className="text-sm sm:text-base font-extrabold text-gray-900 mt-2">
+                  73.00 <span className="text-xs font-semibold text-gray-600">AED</span>
+                </div>
+              </div>
+
+              {/* Product 3: Sol de Janeiro Beij... */}
+              <div className="border border-gray-100 rounded-2xl p-2.5 sm:p-3 flex flex-col justify-between bg-white hover:border-purple-200 hover:shadow-md transition-all group cursor-pointer">
+                <div>
+                  <div className="w-full aspect-[4/5] rounded-xl overflow-hidden bg-[#F8F9FA] flex items-center justify-center p-1 relative mb-2">
+                    <img 
+                      src="/products/sol-de-janeiro.jpg" 
+                      alt="Sol de Janeiro" 
+                      className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-200"
+                    />
+                  </div>
+                  <h3 className="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2 leading-snug mt-1 min-h-[34px]">
+                    Sol de Janeiro Beij...
+                  </h3>
+                </div>
+                <div className="text-sm sm:text-base font-extrabold text-gray-900 mt-2">
+                  59.00 <span className="text-xs font-semibold text-gray-600">AED</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
   );
 }
