@@ -159,7 +159,7 @@ export const USERS = [
     "market": "UAE",
     "currency": "AED",
     "balance": "24,650.00 AED",
-    "storeName": "EmirFlow",
+    "storeName": "Dubai Trends",
     "storeId": "dubai_trends",
     "phone": "+971 50 123 4567",
     "bankTitle": "Nikhil Kumar Kushwaha",
@@ -1216,7 +1216,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1200",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Nov 08, 2026 - Nov 14, 2026",
         "grossCodCollected": "441.00 AED",
         "sourcingCost": "178.50 AED",
@@ -1230,7 +1230,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1198",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Nov 01, 2026 - Nov 07, 2026",
         "grossCodCollected": "497.70 AED",
         "sourcingCost": "201.45 AED",
@@ -1244,7 +1244,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1196",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 25, 2026 - Oct 31, 2026",
         "grossCodCollected": "554.40 AED",
         "sourcingCost": "224.40 AED",
@@ -1258,7 +1258,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1194",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 18, 2026 - Oct 24, 2026",
         "grossCodCollected": "611.10 AED",
         "sourcingCost": "247.35 AED",
@@ -1272,7 +1272,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1192",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 11, 2026 - Oct 17, 2026",
         "grossCodCollected": "667.80 AED",
         "sourcingCost": "270.30 AED",
@@ -1286,7 +1286,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1190",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 04, 2026 - Oct 10, 2026",
         "grossCodCollected": "724.50 AED",
         "sourcingCost": "293.25 AED",
@@ -1300,7 +1300,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1188",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 27, 2026 - Oct 03, 2026",
         "grossCodCollected": "781.20 AED",
         "sourcingCost": "316.20 AED",
@@ -1314,7 +1314,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1186",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 20, 2026 - Sep 26, 2026",
         "grossCodCollected": "837.90 AED",
         "sourcingCost": "339.15 AED",
@@ -1328,7 +1328,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1184",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 13, 2026 - Sep 19, 2026",
         "grossCodCollected": "894.60 AED",
         "sourcingCost": "362.10 AED",
@@ -1342,7 +1342,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1182",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 06, 2026 - Sep 12, 2026",
         "grossCodCollected": "951.30 AED",
         "sourcingCost": "385.05 AED",
@@ -1356,7 +1356,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1180",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 30, 2026 - Sep 05, 2026",
         "grossCodCollected": "1008.00 AED",
         "sourcingCost": "408.00 AED",
@@ -1370,7 +1370,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1178",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 23, 2026 - Aug 29, 2026",
         "grossCodCollected": "1064.70 AED",
         "sourcingCost": "430.95 AED",
@@ -1384,7 +1384,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1176",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 16, 2026 - Aug 22, 2026",
         "grossCodCollected": "1121.40 AED",
         "sourcingCost": "453.90 AED",
@@ -1398,7 +1398,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1174",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 09, 2026 - Aug 15, 2026",
         "grossCodCollected": "1178.10 AED",
         "sourcingCost": "476.85 AED",
@@ -1412,7 +1412,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1172",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 02, 2026 - Aug 08, 2026",
         "grossCodCollected": "1234.80 AED",
         "sourcingCost": "499.80 AED",
@@ -1426,7 +1426,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1170",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jul 26, 2026 - Aug 01, 2026",
         "grossCodCollected": "1291.50 AED",
         "sourcingCost": "522.75 AED",
@@ -1440,7 +1440,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1168",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jul 19, 2026 - Jul 25, 2026",
         "grossCodCollected": "1348.20 AED",
         "sourcingCost": "545.70 AED",
@@ -1454,7 +1454,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1166",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jul 12, 2026 - Jul 18, 2026",
         "grossCodCollected": "1404.90 AED",
         "sourcingCost": "568.65 AED",
@@ -1468,7 +1468,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1164",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jul 05, 2026 - Jul 11, 2026",
         "grossCodCollected": "1461.60 AED",
         "sourcingCost": "591.60 AED",
@@ -1482,7 +1482,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1162",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jun 28, 2026 - Jul 04, 2026",
         "grossCodCollected": "1518.30 AED",
         "sourcingCost": "614.55 AED",
@@ -1496,7 +1496,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1160",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jun 21, 2026 - Jun 27, 2026",
         "grossCodCollected": "1575.00 AED",
         "sourcingCost": "637.50 AED",
@@ -1510,7 +1510,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1158",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jun 14, 2026 - Jun 20, 2026",
         "grossCodCollected": "455.70 AED",
         "sourcingCost": "184.45 AED",
@@ -1524,7 +1524,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1156",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jun 07, 2026 - Jun 13, 2026",
         "grossCodCollected": "512.40 AED",
         "sourcingCost": "207.40 AED",
@@ -1538,7 +1538,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1154",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "May 31, 2026 - Jun 06, 2026",
         "grossCodCollected": "569.10 AED",
         "sourcingCost": "230.35 AED",
@@ -1552,7 +1552,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1152",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "May 24, 2026 - May 30, 2026",
         "grossCodCollected": "625.80 AED",
         "sourcingCost": "253.30 AED",
@@ -1566,7 +1566,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1150",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "May 17, 2026 - May 23, 2026",
         "grossCodCollected": "682.50 AED",
         "sourcingCost": "276.25 AED",
@@ -1580,7 +1580,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1148",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "May 10, 2026 - May 16, 2026",
         "grossCodCollected": "739.20 AED",
         "sourcingCost": "299.20 AED",
@@ -1594,7 +1594,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1146",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "May 03, 2026 - May 09, 2026",
         "grossCodCollected": "795.90 AED",
         "sourcingCost": "322.15 AED",
@@ -1608,7 +1608,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1144",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Apr 26, 2026 - May 02, 2026",
         "grossCodCollected": "852.60 AED",
         "sourcingCost": "345.10 AED",
@@ -1622,7 +1622,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1142",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Apr 19, 2026 - Apr 25, 2026",
         "grossCodCollected": "909.30 AED",
         "sourcingCost": "368.05 AED",
@@ -1636,7 +1636,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1140",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Apr 12, 2026 - Apr 18, 2026",
         "grossCodCollected": "966.00 AED",
         "sourcingCost": "391.00 AED",
@@ -1650,7 +1650,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1138",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Apr 05, 2026 - Apr 11, 2026",
         "grossCodCollected": "1022.70 AED",
         "sourcingCost": "413.95 AED",
@@ -1664,7 +1664,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1136",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Mar 29, 2026 - Apr 04, 2026",
         "grossCodCollected": "1079.40 AED",
         "sourcingCost": "436.90 AED",
@@ -1678,7 +1678,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1134",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Mar 22, 2026 - Mar 28, 2026",
         "grossCodCollected": "1136.10 AED",
         "sourcingCost": "459.85 AED",
@@ -1692,7 +1692,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1132",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Mar 15, 2026 - Mar 21, 2026",
         "grossCodCollected": "1192.80 AED",
         "sourcingCost": "482.80 AED",
@@ -1706,7 +1706,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1130",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Mar 08, 2026 - Mar 14, 2026",
         "grossCodCollected": "1249.50 AED",
         "sourcingCost": "505.75 AED",
@@ -1720,7 +1720,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1128",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Mar 01, 2026 - Mar 07, 2026",
         "grossCodCollected": "1306.20 AED",
         "sourcingCost": "528.70 AED",
@@ -1734,7 +1734,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1126",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Feb 22, 2026 - Feb 28, 2026",
         "grossCodCollected": "1362.90 AED",
         "sourcingCost": "551.65 AED",
@@ -1748,7 +1748,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1124",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Feb 15, 2026 - Feb 21, 2026",
         "grossCodCollected": "1419.60 AED",
         "sourcingCost": "574.60 AED",
@@ -1762,7 +1762,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1122",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Feb 08, 2026 - Feb 14, 2026",
         "grossCodCollected": "1476.30 AED",
         "sourcingCost": "597.55 AED",
@@ -1776,7 +1776,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1120",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Feb 01, 2026 - Feb 07, 2026",
         "grossCodCollected": "1533.00 AED",
         "sourcingCost": "620.50 AED",
@@ -1790,7 +1790,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1118",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jan 25, 2026 - Jan 31, 2026",
         "grossCodCollected": "1589.70 AED",
         "sourcingCost": "643.45 AED",
@@ -1804,7 +1804,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1116",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jan 18, 2026 - Jan 24, 2026",
         "grossCodCollected": "470.40 AED",
         "sourcingCost": "190.40 AED",
@@ -1818,7 +1818,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1114",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jan 11, 2026 - Jan 17, 2026",
         "grossCodCollected": "527.10 AED",
         "sourcingCost": "213.35 AED",
@@ -1832,7 +1832,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1112",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Jan 04, 2026 - Jan 10, 2026",
         "grossCodCollected": "583.80 AED",
         "sourcingCost": "236.30 AED",
@@ -1846,7 +1846,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1110",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Dec 28, 2025 - Jan 03, 2026",
         "grossCodCollected": "640.50 AED",
         "sourcingCost": "259.25 AED",
@@ -1860,7 +1860,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1108",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Dec 21, 2025 - Dec 27, 2025",
         "grossCodCollected": "697.20 AED",
         "sourcingCost": "282.20 AED",
@@ -1874,7 +1874,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1106",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Dec 14, 2025 - Dec 20, 2025",
         "grossCodCollected": "753.90 AED",
         "sourcingCost": "305.15 AED",
@@ -1888,7 +1888,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1104",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Dec 07, 2025 - Dec 13, 2025",
         "grossCodCollected": "810.60 AED",
         "sourcingCost": "328.10 AED",
@@ -1902,7 +1902,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1102",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Nov 30, 2025 - Dec 06, 2025",
         "grossCodCollected": "867.30 AED",
         "sourcingCost": "351.05 AED",
@@ -1916,7 +1916,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1100",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Nov 23, 2025 - Nov 29, 2025",
         "grossCodCollected": "924.00 AED",
         "sourcingCost": "374.00 AED",
@@ -1930,7 +1930,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1098",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Nov 16, 2025 - Nov 22, 2025",
         "grossCodCollected": "980.70 AED",
         "sourcingCost": "396.95 AED",
@@ -1944,7 +1944,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1096",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Nov 09, 2025 - Nov 15, 2025",
         "grossCodCollected": "1037.40 AED",
         "sourcingCost": "419.90 AED",
@@ -1958,7 +1958,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1094",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Nov 02, 2025 - Nov 08, 2025",
         "grossCodCollected": "1094.10 AED",
         "sourcingCost": "442.85 AED",
@@ -1972,7 +1972,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1092",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 26, 2025 - Nov 01, 2025",
         "grossCodCollected": "1150.80 AED",
         "sourcingCost": "465.80 AED",
@@ -1986,7 +1986,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1090",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 19, 2025 - Oct 25, 2025",
         "grossCodCollected": "1207.50 AED",
         "sourcingCost": "488.75 AED",
@@ -2000,7 +2000,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1088",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 12, 2025 - Oct 18, 2025",
         "grossCodCollected": "1264.20 AED",
         "sourcingCost": "511.70 AED",
@@ -2014,7 +2014,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1086",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Oct 05, 2025 - Oct 11, 2025",
         "grossCodCollected": "1320.90 AED",
         "sourcingCost": "534.65 AED",
@@ -2028,7 +2028,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1084",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 28, 2025 - Oct 04, 2025",
         "grossCodCollected": "1377.60 AED",
         "sourcingCost": "557.60 AED",
@@ -2042,7 +2042,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1082",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 21, 2025 - Sep 27, 2025",
         "grossCodCollected": "1434.30 AED",
         "sourcingCost": "580.55 AED",
@@ -2056,7 +2056,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1080",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 14, 2025 - Sep 20, 2025",
         "grossCodCollected": "1491.00 AED",
         "sourcingCost": "603.50 AED",
@@ -2070,7 +2070,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1078",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Sep 07, 2025 - Sep 13, 2025",
         "grossCodCollected": "1547.70 AED",
         "sourcingCost": "626.45 AED",
@@ -2084,7 +2084,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1076",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 31, 2025 - Sep 06, 2025",
         "grossCodCollected": "1604.40 AED",
         "sourcingCost": "649.40 AED",
@@ -2098,7 +2098,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1074",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 24, 2025 - Aug 30, 2025",
         "grossCodCollected": "485.10 AED",
         "sourcingCost": "196.35 AED",
@@ -2112,7 +2112,7 @@ export const USERS = [
       {
         "invoiceNumber": "INV-ZB-2026-1072",
         "storeId": "dubai_trends",
-        "storeName": "EmirFlow",
+        "storeName": "Dubai Trends",
         "billingPeriod": "Aug 17, 2025 - Aug 23, 2025",
         "grossCodCollected": "541.80 AED",
         "sourcingCost": "219.30 AED",

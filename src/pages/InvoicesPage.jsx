@@ -10,8 +10,8 @@ import {
 } from 'lucide-react';
 
 export default function InvoicesPage({ currentUser }) {
-  // Sync selectedStore when currentUser changes
-  const [selectedStore, setSelectedStore] = useState(currentUser?.storeName || 'EmirFlow');
+  // 4 Unique Store Names across all 4 accounts (No EmirFlow)
+  const [selectedStore, setSelectedStore] = useState(currentUser?.storeName || 'Dubai Trends');
   const [activeInvoiceDetail, setActiveInvoiceDetail] = useState(null);
   const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,13 +23,13 @@ export default function InvoicesPage({ currentUser }) {
     }
   }, [currentUser]);
 
-  // Unique invoice datasets for each of the 4 accounts (Strictly 3-digit payouts)
+  // Unique invoice datasets for each of the 4 accounts (3-digit payouts, unique store names)
   const STORE_INVOICES = {
-    'EmirFlow': [
+    'Dubai Trends': [
       {
-        id: "33792-81899-emirflow_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
-        invoiceName: "33792-81899-emirflow_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81899-dubaitrends_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
+        invoiceName: "33792-81899-dubaitrends_c32a325f-8663-42e6-b033-a12aa924c91.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 284",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-11-13",
@@ -40,9 +40,9 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 38
       },
       {
-        id: "33792-81885-emirflow_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
-        invoiceName: "33792-81885-emirflow_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81885-dubaitrends_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
+        invoiceName: "33792-81885-dubaitrends_b81f451a-7512-41d5-9128-d18bb819c12.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 312",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-11-06",
@@ -53,9 +53,9 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 42
       },
       {
-        id: "33792-81872-emirflow_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
-        invoiceName: "33792-81872-emirflow_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81872-dubaitrends_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
+        invoiceName: "33792-81872-dubaitrends_f72c189b-6401-49b2-a812-c98aa715d34.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 264",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-10-30",
@@ -66,9 +66,9 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 35
       },
       {
-        id: "33792-81860-emirflow_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
-        invoiceName: "33792-81860-emirflow_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81860-dubaitrends_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
+        invoiceName: "33792-81860-dubaitrends_e51a902d-5310-48a1-b703-b87cc624e56.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 298",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-10-23",
@@ -79,9 +79,9 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 39
       },
       {
-        id: "33792-81848-emirflow_d40b891c-4209-4790-a692-a76bb513f78.pdf",
-        invoiceName: "33792-81848-emirflow_d40b891c-4209-4790-a692-a76bb513f78.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81848-dubaitrends_d40b891c-4209-4790-a692-a76bb513f78.pdf",
+        invoiceName: "33792-81848-dubaitrends_d40b891c-4209-4790-a692-a76bb513f78.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 345",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-10-16",
@@ -92,9 +92,9 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 46
       },
       {
-        id: "33792-81835-emirflow_a39c780b-3198-468f-9581-965aa402e67.pdf",
-        invoiceName: "33792-81835-emirflow_a39c780b-3198-468f-9581-965aa402e67.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81835-dubaitrends_a39c780b-3198-468f-9581-965aa402e67.pdf",
+        invoiceName: "33792-81835-dubaitrends_a39c780b-3198-468f-9581-965aa402e67.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 271",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-10-09",
@@ -105,9 +105,9 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 36
       },
       {
-        id: "33792-81822-emirflow_928b679a-2087-457e-8470-854993f1d56.pdf",
-        invoiceName: "33792-81822-emirflow_928b679a-2087-457e-8470-854993f1d56.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81822-dubaitrends_928b679a-2087-457e-8470-854993f1d56.pdf",
+        invoiceName: "33792-81822-dubaitrends_928b679a-2087-457e-8470-854993f1d56.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 329",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-10-02",
@@ -118,9 +118,9 @@ export default function InvoicesPage({ currentUser }) {
         ordersCount: 43
       },
       {
-        id: "33792-81810-emirflow_817a5689-1976-446d-736f-743882e0c45.pdf",
-        invoiceName: "33792-81810-emirflow_817a5689-1976-446d-736f-743882e0c45.pdf",
-        storeName: "EmirFlow",
+        id: "33792-81810-dubaitrends_817a5689-1976-446d-736f-743882e0c45.pdf",
+        invoiceName: "33792-81810-dubaitrends_817a5689-1976-446d-736f-743882e0c45.pdf",
+        storeName: "Dubai Trends",
         payout: "AED 256",
         paymentStatus: "N/A",
         dateOfInvoice: "2026-09-25",
@@ -269,7 +269,7 @@ export default function InvoicesPage({ currentUser }) {
     ]
   };
 
-  const currentStoreList = STORE_INVOICES[selectedStore] || STORE_INVOICES['EmirFlow'];
+  const currentStoreList = STORE_INVOICES[selectedStore] || STORE_INVOICES['Dubai Trends'];
   
   // Combine all invoices for "All Stores" option
   const allInvoices = selectedStore === 'All Stores'
@@ -310,7 +310,7 @@ export default function InvoicesPage({ currentUser }) {
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-12 animate-in fade-in duration-300">
       
-      {/* Top Banner matching official Zambeel screenshot */}
+      {/* Top Banner matching official Zambeel portal */}
       <div className="bg-gradient-to-r from-[#6b42f4] via-[#5b54f6] to-[#486ff8] rounded-2xl p-6 sm:p-8 text-white shadow-2xs">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
           My Invoices
@@ -329,7 +329,7 @@ export default function InvoicesPage({ currentUser }) {
             Invoices
           </h2>
 
-          {/* Select Store Dropdown - Unique store name per account */}
+          {/* Select Store Dropdown - 4 Unique store names (No EmirFlow) */}
           <div className="flex items-center gap-3">
             <label className="text-xs sm:text-sm font-medium text-gray-700 whitespace-nowrap">
               Select Store
@@ -343,7 +343,7 @@ export default function InvoicesPage({ currentUser }) {
                 }}
                 className="w-full appearance-none bg-white border border-gray-200 rounded-lg px-4 py-2 text-xs sm:text-sm font-medium text-gray-800 hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400 pr-9 shadow-2xs cursor-pointer"
               >
-                {['EmirFlow', 'Riyadh Prime', 'Doha Elite', 'Kuwait Direct'].map((st) => (
+                {['Dubai Trends', 'Riyadh Prime', 'Doha Elite', 'Kuwait Direct'].map((st) => (
                   <option key={st} value={st}>{st}</option>
                 ))}
                 <option value="All Stores">All Stores</option>
@@ -353,14 +353,14 @@ export default function InvoicesPage({ currentUser }) {
           </div>
         </div>
 
-        {/* Invoices Table: Clean, spacious 6-column layout with no overlap */}
+        {/* Invoices Table: 6 columns, no Payment Reason, line breaks for long names */}
         <div className="overflow-x-auto rounded-xl border border-gray-100 mt-4">
           <table className="min-w-full divide-y divide-gray-100 text-left text-xs sm:text-sm border-collapse">
             
             {/* Thead with soft light blue background */}
             <thead className="bg-[#f0f6ff] text-[#1e293b] font-medium text-xs sm:text-sm">
               <tr>
-                <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Invoice Name</th>
+                <th className="py-3.5 px-4 font-semibold whitespace-nowrap min-w-[220px] max-w-[340px]">Invoice Name</th>
                 <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Store Name</th>
                 {/* Payout column strictly 3-digits */}
                 <th className="py-3.5 px-4 font-semibold whitespace-nowrap">Payout</th>
@@ -382,38 +382,35 @@ export default function InvoicesPage({ currentUser }) {
                 paginatedInvoices.map((inv) => (
                   <tr key={inv.id} className="hover:bg-gray-50/50 transition-colors">
                     
-                    {/* Invoice Name: clean, comfortably readable without blowing width */}
-                    <td className="py-4 px-4 font-mono text-xs text-gray-700 whitespace-nowrap">
-                      <span 
-                        className="inline-block max-w-[280px] sm:max-w-[340px] truncate align-middle"
-                        title={inv.invoiceName}
-                      >
+                    {/* Invoice Name: natural line break on long string (break-all / whitespace-normal) */}
+                    <td className="py-3.5 px-4 font-mono text-xs text-gray-700 min-w-[220px] max-w-[340px]">
+                      <span className="break-all whitespace-normal block leading-relaxed">
                         {inv.invoiceName}
                       </span>
                     </td>
 
                     {/* Store Name */}
-                    <td className="py-4 px-4 text-gray-700 whitespace-nowrap font-medium">
+                    <td className="py-3.5 px-4 text-gray-700 whitespace-nowrap font-medium">
                       {inv.storeName}
                     </td>
 
                     {/* Payout: Strictly 3 digits */}
-                    <td className="py-4 px-4 whitespace-nowrap font-semibold text-gray-900">
+                    <td className="py-3.5 px-4 whitespace-nowrap font-semibold text-gray-900">
                       {inv.payout}
                     </td>
 
                     {/* Payment Status (N/A) */}
-                    <td className="py-4 px-4 text-gray-400 italic whitespace-nowrap">
+                    <td className="py-3.5 px-4 text-gray-400 italic whitespace-nowrap">
                       {inv.paymentStatus}
                     </td>
 
                     {/* Date of Invoice */}
-                    <td className="py-4 px-4 text-gray-700 whitespace-nowrap">
+                    <td className="py-3.5 px-4 text-gray-700 whitespace-nowrap">
                       {inv.dateOfInvoice}
                     </td>
 
                     {/* Download Button */}
-                    <td className="py-4 px-4 whitespace-nowrap text-right sm:text-left">
+                    <td className="py-3.5 px-4 whitespace-nowrap text-right sm:text-left">
                       <div className="flex items-center gap-2">
                         <button
                           onClick={() => handleDownload(inv)}
