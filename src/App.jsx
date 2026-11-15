@@ -7,6 +7,7 @@ import OrdersPage from './pages/OrdersPage';
 import InvoicesPage from './pages/InvoicesPage';
 import SettingsPage from './pages/SettingsPage';
 import DashboardPage from './pages/DashboardPage';
+import OrdersAnalyticsPage from './pages/OrdersAnalyticsPage';
 import { USERS } from './data/mockData';
 
 export default function App() {
@@ -62,7 +63,14 @@ export default function App() {
               <SettingsPage currentUser={currentUser} />
             )}
 
-            {(activePage === 'dashboard' || activePage === 'orders-analytics' || activePage === 'gold-subscription' || activePage === 'bank-accounts') && (
+            {activePage === 'orders-analytics' && (
+              <OrdersAnalyticsPage 
+                currentUser={currentUser}
+                onNavigateToOrders={() => setActivePage('orders')}
+              />
+            )}
+
+            {(activePage === 'dashboard' || activePage === 'gold-subscription' || activePage === 'bank-accounts') && (
               <DashboardPage 
                 currentUser={currentUser}
                 onNavigateToOrders={() => setActivePage('orders')}
