@@ -6,7 +6,8 @@ import {
   Download, 
   Eye, 
   X,
-  FileText
+  FileText,
+  CheckCircle2
 } from 'lucide-react';
 
 // Deterministic hash generator for authentic Zambeel invoice filenames
@@ -54,7 +55,7 @@ function generateStoreInvoices(storeName, storeSlug, currency, count = 100) {
       invoiceName,
       storeName,
       payout: `${currency} ${payoutNum}`,
-      paymentStatus: "N/A",
+      paymentStatus: "Success",
       dateOfInvoice: dateStr,
       billingPeriod,
       grossCod: `${currency} ${grossNum}`,
@@ -238,9 +239,12 @@ export default function InvoicesPage({ currentUser }) {
                       {inv.payout}
                     </td>
 
-                    {/* Payment Status (N/A) */}
-                    <td className="py-3.5 px-4 text-gray-400 italic whitespace-nowrap">
-                      {inv.paymentStatus}
+                    {/* Payment Status: Success with green */}
+                    <td className="py-3.5 px-4 whitespace-nowrap">
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        Success
+                      </span>
                     </td>
 
                     {/* Date of Invoice */}
@@ -382,6 +386,13 @@ export default function InvoicesPage({ currentUser }) {
               <div className="flex justify-between py-1.5 border-b border-gray-100">
                 <span className="text-gray-500">Store Name:</span>
                 <span className="font-semibold text-gray-900">{activeInvoiceDetail.storeName}</span>
+              </div>
+              <div className="flex justify-between py-1.5 border-b border-gray-100">
+                <span className="text-gray-500">Payment Status:</span>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  Success
+                </span>
               </div>
               <div className="flex justify-between py-1.5 border-b border-gray-100">
                 <span className="text-gray-500">Date of Invoice:</span>
