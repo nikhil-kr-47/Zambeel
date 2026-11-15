@@ -6,6 +6,7 @@ import GetStartedPage from './pages/GetStartedPage';
 import OrdersPage from './pages/OrdersPage';
 import InvoicesPage from './pages/InvoicesPage';
 import SettingsPage from './pages/SettingsPage';
+import BankAccountsPage from './pages/BankAccountsPage';
 import DashboardPage from './pages/DashboardPage';
 import OrdersAnalyticsPage from './pages/OrdersAnalyticsPage';
 import { USERS } from './data/mockData';
@@ -59,8 +60,8 @@ export default function App() {
               <InvoicesPage currentUser={currentUser} />
             )}
 
-            {activePage === 'settings' && (
-              <SettingsPage currentUser={currentUser} />
+            {(activePage === 'bank-accounts' || activePage === 'settings') && (
+              <BankAccountsPage currentUser={currentUser} />
             )}
 
             {activePage === 'orders-analytics' && (
@@ -70,7 +71,7 @@ export default function App() {
               />
             )}
 
-            {(activePage === 'dashboard' || activePage === 'gold-subscription' || activePage === 'bank-accounts') && (
+            {(activePage === 'dashboard' || activePage === 'gold-subscription') && (
               <DashboardPage 
                 currentUser={currentUser}
                 onNavigateToOrders={() => setActivePage('orders')}
