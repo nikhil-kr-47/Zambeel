@@ -11,13 +11,31 @@ export default function OrdersPage({ currentUser }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilterModal, setShowFilterModal] = useState(false);
 
-  // Exact 3 top records from authentic Zambeel screenshot
+  // Dynamic order amount according to account
+  const getOrderAmountForUser = (user) => {
+    switch (user?.id) {
+      case 'user1':
+        return 'AED 120.00';
+      case 'user2':
+        return 'AED 78.00';
+      case 'user3':
+        return 'AED 137.00';
+      case 'user4':
+        return 'AED 165.00';
+      default:
+        return 'AED 120.00';
+    }
+  };
+
+  const accountOrderAmount = getOrderAmountForUser(currentUser);
+
+  // Exact 3 top records from authentic Zambeel screenshot (with dynamic account amount)
   const AUTHENTIC_SCREENSHOT_ORDERS = [
     {
       id: "1038",
       complaint: "-",
       customerName: "Abdulraheem -",
-      totalAmount: "AED 76.00",
+      totalAmount: accountOrderAmount,
       phoneNumber: "971509992424",
       city: "Dubai",
       country: "United Arab Emirates",
@@ -28,7 +46,7 @@ export default function OrdersPage({ currentUser }) {
       id: "1050",
       complaint: "-",
       customerName: "Jamal -",
-      totalAmount: "AED 76.00",
+      totalAmount: accountOrderAmount,
       phoneNumber: "971508858188",
       city: "Dubai",
       country: "United Arab Emirates",
@@ -39,7 +57,7 @@ export default function OrdersPage({ currentUser }) {
       id: "1049",
       complaint: "-",
       customerName: "Jirata -",
-      totalAmount: "AED 76.00",
+      totalAmount: accountOrderAmount,
       phoneNumber: "971556402410",
       city: "-",
       country: "United Arab Emirates",
@@ -91,10 +109,6 @@ export default function OrdersPage({ currentUser }) {
   // Convert user orders to exact screenshot format
   const normalizedUserOrders = (currentUser?.orders || []).map((o, idx) => {
     const rawDigits = o.phoneNumber.replace(/[^0-9]/g, '');
-    const amountParts = o.totalAmount.split(' ');
-    const formattedAmount = amountParts.length === 2 
-      ? `${amountParts[1]} ${amountParts[0]}` 
-      : o.totalAmount;
 
     // Generate clean integer ID counting down like Zambeel
     const numericId = String(1048 - idx);
@@ -103,7 +117,7 @@ export default function OrdersPage({ currentUser }) {
       id: numericId,
       complaint: o.complaint === 'None' ? '-' : o.complaint,
       customerName: `${o.customerName} -`,
-      totalAmount: formattedAmount,
+      totalAmount: accountOrderAmount,
       phoneNumber: rawDigits,
       city: o.city || '-',
       country: getFullCountryName(o.country),

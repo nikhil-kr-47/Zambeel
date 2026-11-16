@@ -39,12 +39,12 @@ function generateStoreInvoices(storeName, storeSlug, currency, count = 100) {
     const year = invDate.getFullYear();
     const billingPeriod = `${startMonth} ${startDay}, ${year} - ${endMonth} ${endDay}, ${year}`;
 
-    // Strictly 3-digit payout (200 - 379)
-    const payoutNum = 200 + ((i * 37 + 84) % 180);
-    const grossNum = 420 + ((i * 43 + 69) % 200);
-    const sourcingNum = 130 + ((i * 19 + 22) % 60);
-    const deliveryNum = 40 + ((i * 11 + 13) % 20);
-    const ordersCount = 28 + (i % 22);
+    // Strictly 4-digit payout for all accounts (e.g. 2,100 - 3,850)
+    const payoutNum = 2000 + ((i * 67 + 840) % 1850);
+    const sourcingNum = 1200 + ((i * 29 + 150) % 500);
+    const deliveryNum = 420 + ((i * 17 + 80) % 180);
+    const grossNum = payoutNum + sourcingNum + deliveryNum;
+    const ordersCount = 35 + (i % 25);
 
     const invoiceNumber = 81899 - i;
     const hash = generateInvoiceHash(i + (storeSlug.length * 17));
@@ -54,13 +54,13 @@ function generateStoreInvoices(storeName, storeSlug, currency, count = 100) {
       id: invoiceName,
       invoiceName,
       storeName,
-      payout: `${currency} ${payoutNum}`,
+      payout: `${currency} ${payoutNum.toLocaleString('en-US')}`,
       paymentStatus: "Success",
       dateOfInvoice: dateStr,
       billingPeriod,
-      grossCod: `${currency} ${grossNum}`,
-      sourcingCost: `${currency} ${sourcingNum}`,
-      deliveryFee: `${currency} ${deliveryNum}`,
+      grossCod: `${currency} ${grossNum.toLocaleString('en-US')}`,
+      sourcingCost: `${currency} ${sourcingNum.toLocaleString('en-US')}`,
+      deliveryFee: `${currency} ${deliveryNum.toLocaleString('en-US')}`,
       ordersCount
     });
   }
