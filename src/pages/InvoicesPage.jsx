@@ -151,7 +151,7 @@ export default function InvoicesPage({ currentUser }) {
           My Invoices
         </h1>
         <p className="text-purple-100 text-xs sm:text-sm mt-1.5 font-normal">
-          Manage and download your store invoices ({allInvoices.length} total statements)
+          Manage and download your store invoices
         </p>
       </div>
 
@@ -160,14 +160,9 @@ export default function InvoicesPage({ currentUser }) {
         
         {/* Card Header matching Screenshot */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4">
-          <div className="flex items-center gap-3">
-            <h2 className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">
-              Invoices
-            </h2>
-            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-700 border border-purple-100">
-              {allInvoices.length} invoices
-            </span>
-          </div>
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 tracking-tight">
+            Invoices
+          </h2>
 
           {/* Select Store Dropdown - 4 Unique store names (No EmirFlow) */}
           <div className="flex items-center gap-3">
