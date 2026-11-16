@@ -29,25 +29,109 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
     }
   }, [currentUser]);
 
-  // We can calculate dynamic counts based on currentUser orders, or default to authentic Zambeel figures
-  const orders = currentUser?.orders || [];
-  const hasOrders = orders.length > 0;
+  // Dynamic dataset per account & store, ensuring strong profitability
+  const getAnalyticsDataset = () => {
+    const store = selectedStore || currentUser?.storeName || 'Dubai Trends';
 
-  // Authentic Zambeel dashboard baseline totals (21 pre-dispatch + 28 dispatched = 49 total orders)
-  const totalOrdersCount = 49;
-  const preDispatchTotal = 21;
-  const confirmationPending = 0;
-  const cancelled = 13;
-  const approved = 6;
-  const dispatchingInProcess = 2;
+    if (store === 'Riyadh Prime' || (!selectedStore && currentUser?.id === 'user2')) {
+      return {
+        totalOrdersCount: 2647,
+        preDispatchTotal: 357,
+        confirmationPending: 34,
+        cancelled: 55,
+        approved: 180,
+        dispatchingInProcess: 88,
+        dispatchedTotal: 2290,
+        shipped: 95,
+        delivered: 2011,
+        undelivered: 130,
+        returnInTransit: 54,
+        returned: 48
+      };
+    }
 
-  // Dispatched status counts
-  const dispatchedTotal = 28;
-  const shipped = 0;
-  const delivered = 13;
-  const undelivered = 13;
-  const returnInTransit = 0;
-  const returned = 2;
+    if (store === 'Doha Elite' || (!selectedStore && currentUser?.id === 'user3')) {
+      return {
+        totalOrdersCount: 687,
+        preDispatchTotal: 47,
+        confirmationPending: 5,
+        cancelled: 6,
+        approved: 24,
+        dispatchingInProcess: 12,
+        dispatchedTotal: 640,
+        shipped: 18,
+        delivered: 597,
+        undelivered: 16,
+        returnInTransit: 9,
+        returned: 8
+      };
+    }
+
+    if (store === 'Kuwait Direct' || (!selectedStore && currentUser?.id === 'user4')) {
+      return {
+        totalOrdersCount: 1420,
+        preDispatchTotal: 140,
+        confirmationPending: 12,
+        cancelled: 18,
+        approved: 75,
+        dispatchingInProcess: 35,
+        dispatchedTotal: 1280,
+        shipped: 45,
+        delivered: 1150,
+        undelivered: 55,
+        returnInTransit: 30,
+        returned: 25
+      };
+    }
+
+    if (store === 'All Stores') {
+      return {
+        totalOrdersCount: 5840,
+        preDispatchTotal: 710,
+        confirmationPending: 66,
+        cancelled: 103,
+        approved: 364,
+        dispatchingInProcess: 177,
+        dispatchedTotal: 5130,
+        shipped: 193,
+        delivered: 4567,
+        undelivered: 257,
+        returnInTransit: 113,
+        returned: 99
+      };
+    }
+
+    // Default: Dubai Trends (Account 1)
+    return {
+      totalOrdersCount: 1086,
+      preDispatchTotal: 166,
+      confirmationPending: 15,
+      cancelled: 24,
+      approved: 85,
+      dispatchingInProcess: 42,
+      dispatchedTotal: 920,
+      shipped: 35,
+      delivered: 809,
+      undelivered: 56,
+      returnInTransit: 20,
+      returned: 18
+    };
+  };
+
+  const {
+    totalOrdersCount,
+    preDispatchTotal,
+    confirmationPending,
+    cancelled,
+    approved,
+    dispatchingInProcess,
+    dispatchedTotal,
+    shipped,
+    delivered,
+    undelivered,
+    returnInTransit,
+    returned
+  } = getAnalyticsDataset();
 
   // Helper percentages
   const prePct = (val) => preDispatchTotal > 0 ? Math.round((val / preDispatchTotal) * 100) : 0;
@@ -172,7 +256,7 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               All Orders
             </span>
             <span className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-1 block tracking-tight">
-              {totalOrdersCount}
+              {totalOrdersCount.toLocaleString()}
             </span>
           </div>
         </div>
@@ -198,10 +282,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Confirmation Pending
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {confirmationPending}
+              {confirmationPending.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Pre-Dispatch: {prePct(confirmationPending)}% ({confirmationPending}/{preDispatchTotal})
+              % of Pre-Dispatch: {prePct(confirmationPending)}% ({confirmationPending.toLocaleString()}/{preDispatchTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -223,10 +307,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Cancelled
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {cancelled}
+              {cancelled.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Pre-Dispatch: {prePct(cancelled)}% ({cancelled}/{preDispatchTotal})
+              % of Pre-Dispatch: {prePct(cancelled)}% ({cancelled.toLocaleString()}/{preDispatchTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -248,10 +332,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Approved
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {approved}
+              {approved.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Pre-Dispatch: {prePct(approved)}% ({approved}/{preDispatchTotal})
+              % of Pre-Dispatch: {prePct(approved)}% ({approved.toLocaleString()}/{preDispatchTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -273,10 +357,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Dispatching in Process
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {dispatchingInProcess}
+              {dispatchingInProcess.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Pre-Dispatch: {prePct(dispatchingInProcess)}% ({dispatchingInProcess}/{preDispatchTotal})
+              % of Pre-Dispatch: {prePct(dispatchingInProcess)}% ({dispatchingInProcess.toLocaleString()}/{preDispatchTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -301,7 +385,7 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
 
         <div>
           <span className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
-            {dispatchedTotal}
+            {dispatchedTotal.toLocaleString()}
           </span>
         </div>
       </div>
@@ -326,10 +410,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Shipped
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {shipped}
+              {shipped.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Dispatched: {dispPct(shipped)}% ({shipped}/{dispatchedTotal})
+              % of Dispatched: {dispPct(shipped)}% ({shipped.toLocaleString()}/{dispatchedTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -351,10 +435,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Delivered
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {delivered}
+              {delivered.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Dispatched: {dispPct(delivered)}% ({delivered}/{dispatchedTotal})
+              % of Dispatched: {dispPct(delivered)}% ({delivered.toLocaleString()}/{dispatchedTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -376,10 +460,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Undelivered
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {undelivered}
+              {undelivered.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Dispatched: {dispPct(undelivered)}% ({undelivered}/{dispatchedTotal})
+              % of Dispatched: {dispPct(undelivered)}% ({undelivered.toLocaleString()}/{dispatchedTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -401,10 +485,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Return in Transit
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {returnInTransit}
+              {returnInTransit.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Dispatched: {dispPct(returnInTransit)}% ({returnInTransit}/{dispatchedTotal})
+              % of Dispatched: {dispPct(returnInTransit)}% ({returnInTransit.toLocaleString()}/{dispatchedTotal.toLocaleString()})
             </span>
           </div>
         </div>
@@ -429,10 +513,10 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               Return
             </span>
             <span className="text-2xl sm:text-3xl font-bold text-gray-900 mt-1 block tracking-tight">
-              {returned}
+              {returned.toLocaleString()}
             </span>
             <span className="text-[11px] text-gray-400 font-normal mt-1 block">
-              % of Dispatched: {dispPct(returned)}% ({returned}/{dispatchedTotal})
+              % of Dispatched: {dispPct(returned)}% ({returned.toLocaleString()}/{dispatchedTotal.toLocaleString()})
             </span>
           </div>
         </div>

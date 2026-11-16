@@ -15,13 +15,26 @@ export default function DashboardPage({
 }) {
   // Use user name or authentic fallback from screenshot
   const userName = currentUser?.name || 'M Bilal N Phansopkar';
-  const totalOrders = currentUser?.orders?.length || 49;
-  const deliveredOrders = currentUser?.orders 
-    ? currentUser.orders.filter(o => o.status === 'Delivered').length 
-    : 13;
-  const deliveredPercent = totalOrders > 0 
-    ? Math.round((deliveredOrders / totalOrders) * 100) 
-    : 27;
+  
+  // Dynamic order stats according to account requirements
+  const getAccountStats = (user) => {
+    switch (user?.id) {
+      case 'user2':
+        return { totalOrders: 2647, deliveredOrders: 2011 };
+      case 'user3':
+        return { totalOrders: 687, deliveredOrders: 597 };
+      case 'user4':
+        return { totalOrders: 1420, deliveredOrders: 1150 };
+      case 'user1':
+      default:
+        return { totalOrders: 1086, deliveredOrders: 809 };
+    }
+  };
+
+  const accountStats = getAccountStats(currentUser);
+  const totalOrders = accountStats.totalOrders;
+  const deliveredOrders = accountStats.deliveredOrders;
+  const deliveredPercent = Math.round((deliveredOrders / totalOrders) * 100);
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-16 animate-in fade-in duration-300">
@@ -100,7 +113,7 @@ export default function DashboardPage({
               </span>
               <div className="mt-1">
                 <span className="text-2xl sm:text-3xl font-extrabold text-white block">
-                  {totalOrders}
+                  {totalOrders.toLocaleString()}
                 </span>
                 <span className="text-[11px] text-transparent block mt-0.5 select-none">
                   &nbsp;
@@ -115,7 +128,7 @@ export default function DashboardPage({
               </span>
               <div className="mt-1">
                 <span className="text-2xl sm:text-3xl font-extrabold text-white block">
-                  {deliveredOrders}
+                  {deliveredOrders.toLocaleString()}
                 </span>
                 <span className="text-[11px] text-white/70 block mt-0.5">
                   {deliveredPercent} % of total orders
