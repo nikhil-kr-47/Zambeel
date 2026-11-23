@@ -20,41 +20,50 @@ export default function BankAccountsPage({ currentUser }) {
   const [showReplaceModal, setShowReplaceModal] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
 
-  // Bank details customized according to each of the 4 accounts
+  // Bank details customized according to each of the 5 accounts
   const getAccountBankDetails = (user) => {
     switch (user?.id) {
       case 'user2':
         return {
-          bankName: 'Al Rajhi Bank',
-          holderName: user.name || 'Fatima Al-Dosari',
-          code: 'SA03 8000 0000 6080 1016 7519',
-          country: 'Saudi Arabia',
+          bankName: 'Emirates Islamic - Dubai',
+          holderName: 'Fatima Al-Dosari',
+          code: 'AE29 0260 0012 3456 7890 222',
+          country: 'United Arab Emirates',
           connectedSince: 'Connected since 15 Sep 2026',
-          currency: 'SAR'
+          currency: 'AED'
         };
       case 'user3':
         return {
-          bankName: 'Qatar National Bank (QNB)',
-          holderName: user.name || 'Ahmed Al-Thani',
-          code: 'QA21 QNBA 0000 0000 1234 5678 90',
-          country: 'Qatar',
+          bankName: 'Abu Dhabi Commercial Bank (ADCB)',
+          holderName: 'Ahmed Al-Thani',
+          code: 'AE55 0030 0001 2345 6789 333',
+          country: 'United Arab Emirates',
           connectedSince: 'Connected since 02 Aug 2026',
-          currency: 'QAR'
+          currency: 'AED'
         };
       case 'user4':
         return {
-          bankName: 'National Bank of Kuwait (NBK)',
-          holderName: user.name || 'Abdullah Al-Sabah',
-          code: 'KW81 NBOK 0000 0000 0000 1234 5678',
-          country: 'Kuwait',
+          bankName: 'First Abu Dhabi Bank (FAB)',
+          holderName: 'Abdullah Al-Sabah',
+          code: 'AE03 0030 0009 8765 4321 444',
+          country: 'United Arab Emirates',
           connectedSince: 'Connected since 18 Jun 2026',
-          currency: 'KWD'
+          currency: 'AED'
+        };
+      case 'user5':
+        return {
+          bankName: 'Dubai Islamic Bank (DIB)',
+          holderName: 'Sultan Al-Qasimi',
+          code: 'AE44 0240 0012 3456 7890 555',
+          country: 'United Arab Emirates',
+          connectedSince: 'Connected since 05 Jan 2026',
+          currency: 'AED'
         };
       case 'user1':
       default:
         return {
           bankName: 'Kotak mahindra bank',
-          holderName: user?.bankTitle || user?.name || 'Nikhil Kumar Kushwaha',
+          holderName: 'M Bilal N Phansopkar',
           code: 'KKBK0001418',
           country: 'India',
           connectedSince: 'Connected since 23 Oct 2026',

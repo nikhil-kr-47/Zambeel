@@ -128,11 +128,11 @@ export default function Navbar({ currentUser, onSelectUser, setActivePage }) {
                 </div>
               </div>
 
-              {/* 4 Switchable Users Section */}
+              {/* 5 Switchable Users Section */}
               <div className="px-4 py-1.5">
                 <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1.5 mb-1.5">
                   <Users className="w-3 h-3 text-purple-600" />
-                  <span>Switch Account (4 Profiles)</span>
+                  <span>Switch Account (5 Profiles)</span>
                 </div>
                 <div className="space-y-1">
                   {USERS.map((usr) => {

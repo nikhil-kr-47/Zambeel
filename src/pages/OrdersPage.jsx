@@ -21,7 +21,9 @@ export default function OrdersPage({ currentUser }) {
       case 'user3':
         return 'AED 137.00';
       case 'user4':
-        return 'AED 165.00';
+        return 'AED 95.00';
+      case 'user5':
+        return 'AED 145.00';
       default:
         return 'AED 120.00';
     }

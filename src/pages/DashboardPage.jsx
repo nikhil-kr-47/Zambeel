@@ -20,21 +20,23 @@ export default function DashboardPage({
   const getAccountStats = (user) => {
     switch (user?.id) {
       case 'user2':
-        return { totalOrders: 2647, deliveredOrders: 2011 };
+        return { totalOrders: 2647, deliveredOrders: 2011, deliveredPercent: 76 };
       case 'user3':
-        return { totalOrders: 687, deliveredOrders: 597 };
+        return { totalOrders: 687, deliveredOrders: 597, deliveredPercent: 87 };
       case 'user4':
-        return { totalOrders: 1420, deliveredOrders: 1150 };
+        return { totalOrders: 7592, deliveredOrders: 5769, deliveredPercent: 74 };
+      case 'user5':
+        return { totalOrders: 314, deliveredOrders: 279, deliveredPercent: 89 };
       case 'user1':
       default:
-        return { totalOrders: 1086, deliveredOrders: 809 };
+        return { totalOrders: 1086, deliveredOrders: 809, deliveredPercent: 75 };
     }
   };
 
   const accountStats = getAccountStats(currentUser);
   const totalOrders = accountStats.totalOrders;
   const deliveredOrders = accountStats.deliveredOrders;
-  const deliveredPercent = Math.round((deliveredOrders / totalOrders) * 100);
+  const deliveredPercent = accountStats.deliveredPercent;
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-16 animate-in fade-in duration-300">

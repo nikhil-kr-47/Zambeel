@@ -67,37 +67,54 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
       };
     }
 
-    if (store === 'Kuwait Direct' || (!selectedStore && currentUser?.id === 'user4')) {
+    if (store === 'Falcon Express' || (!selectedStore && currentUser?.id === 'user4')) {
       return {
-        totalOrdersCount: 1420,
-        preDispatchTotal: 140,
-        confirmationPending: 12,
-        cancelled: 18,
-        approved: 75,
-        dispatchingInProcess: 35,
-        dispatchedTotal: 1280,
-        shipped: 45,
-        delivered: 1150,
-        undelivered: 55,
-        returnInTransit: 30,
-        returned: 25
+        totalOrdersCount: 7592,
+        preDispatchTotal: 1112,
+        confirmationPending: 112,
+        cancelled: 160,
+        approved: 560,
+        dispatchingInProcess: 280,
+        dispatchedTotal: 6480,
+        shipped: 245,
+        delivered: 5769,
+        undelivered: 320,
+        returnInTransit: 146,
+        returned: 118
+      };
+    }
+
+    if (store === 'Palm Retail' || (!selectedStore && currentUser?.id === 'user5')) {
+      return {
+        totalOrdersCount: 314,
+        preDispatchTotal: 24,
+        confirmationPending: 3,
+        cancelled: 3,
+        approved: 12,
+        dispatchingInProcess: 6,
+        dispatchedTotal: 290,
+        shipped: 4,
+        delivered: 279,
+        undelivered: 5,
+        returnInTransit: 2,
+        returned: 2
       };
     }
 
     if (store === 'All Stores') {
       return {
-        totalOrdersCount: 5840,
-        preDispatchTotal: 710,
-        confirmationPending: 66,
-        cancelled: 103,
-        approved: 364,
-        dispatchingInProcess: 177,
-        dispatchedTotal: 5130,
-        shipped: 193,
-        delivered: 4567,
-        undelivered: 257,
-        returnInTransit: 113,
-        returned: 99
+        totalOrdersCount: 12326,
+        preDispatchTotal: 1706,
+        confirmationPending: 169,
+        cancelled: 248,
+        approved: 861,
+        dispatchingInProcess: 428,
+        dispatchedTotal: 10620,
+        shipped: 397,
+        delivered: 9465,
+        undelivered: 527,
+        returnInTransit: 231,
+        returned: 194
       };
     }
 
@@ -160,7 +177,7 @@ export default function OrdersAnalyticsPage({ currentUser, onNavigateToOrders })
               onChange={(e) => setSelectedStore(e.target.value)}
               className="w-full appearance-none bg-white border border-gray-300 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-medium text-gray-800 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 pr-9 shadow-2xs cursor-pointer"
             >
-              {['Dubai Trends', 'Riyadh Prime', 'Doha Elite', 'Kuwait Direct'].map((st) => (
+              {['Dubai Trends', 'Riyadh Prime', 'Doha Elite', 'Falcon Express', 'Palm Retail'].map((st) => (
                 <option key={st} value={st}>{st}</option>
               ))}
               <option value="All Stores">All Stores</option>

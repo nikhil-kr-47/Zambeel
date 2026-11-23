@@ -85,9 +85,10 @@ export default function InvoicesPage({ currentUser }) {
   // 100+ invoices for each unique store
   const ALL_STORE_INVOICES = useMemo(() => ({
     'Dubai Trends': generateStoreInvoices('Dubai Trends', 'dubaitrends', 'AED', 100),
-    'Riyadh Prime': generateStoreInvoices('Riyadh Prime', 'riyadhprime', 'SAR', 100),
-    'Doha Elite': generateStoreInvoices('Doha Elite', 'dohaelite', 'QAR', 100),
-    'Kuwait Direct': generateStoreInvoices('Kuwait Direct', 'kuwaitdirect', 'KWD', 100)
+    'Riyadh Prime': generateStoreInvoices('Riyadh Prime', 'riyadhprime', 'AED', 100),
+    'Doha Elite': generateStoreInvoices('Doha Elite', 'dohaelite', 'AED', 100),
+    'Falcon Express': generateStoreInvoices('Falcon Express', 'falconexpress', 'AED', 100),
+    'Palm Retail': generateStoreInvoices('Palm Retail', 'palmretail', 'AED', 100)
   }), []);
 
   const currentStoreList = ALL_STORE_INVOICES[selectedStore] || ALL_STORE_INVOICES['Dubai Trends'];
@@ -178,10 +179,10 @@ export default function InvoicesPage({ currentUser }) {
                 }}
                 className="w-full appearance-none bg-white border border-gray-200 rounded-lg px-4 py-2 text-xs sm:text-sm font-medium text-gray-800 hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400 pr-9 shadow-2xs cursor-pointer"
               >
-                {['Dubai Trends', 'Riyadh Prime', 'Doha Elite', 'Kuwait Direct'].map((st) => (
+                {['Dubai Trends', 'Riyadh Prime', 'Doha Elite', 'Falcon Express', 'Palm Retail'].map((st) => (
                   <option key={st} value={st}>{st}</option>
                 ))}
-                <option value="All Stores">All Stores (400 Invoices)</option>
+                <option value="All Stores">All Stores (500 Invoices)</option>
               </select>
               <ChevronDown className="w-4 h-4 text-gray-500 absolute right-3 top-2.5 pointer-events-none" />
             </div>
